@@ -4,12 +4,14 @@
 //    $("p").hide();
 //});
 $(document).ready(function () {
-    $("#mainMenu").hide();
-    $("#checkIn").hide();
-    $("#pictureModal").hide();
-    $("#verified").hide();
-    $("#checkList").hide();
-    $("#map").hide();
-    $("#checkOutForm").hide();
-    $("#checkConfirm").hide();
+    $(".container").hide();
+    $("#logIn").show();
+    // $("#mainMenu").hide();
+    // $("#checkIn").hide();
+    // $("#pictureModal").hide();
+    // $("#verified").hide();
+    // $("#checkList").hide();
+    // $("#map").hide();
+    // $("#checkOutForm").hide();
+    // $("#checkConfirm").hide();
 })
