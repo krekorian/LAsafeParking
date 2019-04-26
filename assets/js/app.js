@@ -4,8 +4,8 @@
 //    $("p").hide();
 //});
 $(document).ready(function () {
-    $(".container").hide();
-    $("#logIn").show();
+    $(".container").hide(1);
+    $("#logIn").show(1000);
     // $("#mainMenu").hide();
     // $("#checkIn").hide();
     // $("#pictureModal").hide();
