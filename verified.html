@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <!--maps script tags-->
+        <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+            type="text/javascript" charset="utf-8"></script>
+        <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+            type="text/javascript" charset="utf-8"></script>
+        <!--app.js-->
+        <script src="assets/js/app.js"></script>
+        <title>Verified</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Safe Stay</a>
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
+        <div class="container" id="checkInForm">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Lisence Plate
+                    Number">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on
+                        the
+                        card title and make up the bulk of the card's
+                        content.</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="driversFirstName">Drivers First Name</label>
+                <input class="form-control" id="driversFirstName"
+                    placeholder="Jane" type="text">
+            </div>
+            <div class="form-group">
+                <label for="dLastName">Drivers Last Name</label>
+                <input class="form-control" id="dLastName"
+                    placeholder="Doe" type="text">
+            </div>
+            <div class="form-group">
+                <label for="plateNum">License Plate Number</label>
+                <input class="form-control" id="plateNum"
+                    placeholder="JaneDoe" type="text">
+            </div>
+            <div class="form-group">
+                <label for="carMake">Car Make</label>
+                <input class="form-control" id="carMake"
+                    placeholder="******" type="text">
+            </div>
+            <div class="form-group">
+                <label for="carModel">Car Model</label>
+                <input class="form-control" id="carModel"
+                    placeholder="******" type="text">
+            </div>
+            <button class="btn btn-primary float-right" id="addDriver">Submit</button>
+        </div>
+    </body>
+</html>
