@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!--Bootstrap CSS-->
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <title>LA SAFE PARKING</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Safe Stay</a>
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </header>
-        <!--Create a container for each element to display on current screen-->
-        <!--Hide any containers not needed, and show with jQuery once that section is requested-->
-        <div class="container" id="logIn">
-            <form>
-                <div class="form-group">
-                    <label for="driversFirstName">User Name</label>
-                    <input class="form-control" id="driversFirstName"
-                        placeholder="JaneDoe" type="text">
-                </div>
-                <div class="form-group">
-                    <label for="carMake">Password</label>
-                    <input class="form-control" id="carMake"
-                        placeholder="******" type="text">
-                </div>
-            </form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LA SAFE PARKING</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Link -->
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+</head>
+
+<body>
+
+
+    <!-- Create container -->
+    <div class="container" id="logIn">
+
+        <!-- Large logo -->
+        <div id="logo">
+            <a class="navbar-brand" href="#">
+                <!-- Left side of logo -->
+                <div id="logo1-lg">Safe</div>
+                <!-- Right side of logo -->
+                <div id="logo2-lg">Stay</div>
+            </a>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <!-- Create Card for content -->
+        <div class="card">
+            <div class="card-body">
+                <!-- Container for inside of the form -->
+                <div class="formContainer">
+                    <!-- Create form -->
+                    <form>
+                        <!-- Form for location ID -->
+                        <div class="form-group" id="locationIdForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" id="formTitle">Location ID</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="formInput" placeholder="1234" type="number">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Form for location ID -->
+                        <div class="form-group" id="passwordForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" id="formTitle">Password</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="formInput" placeholder="******" type="text">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Create forgot password link -->
+                        <div>
+                            <a class="password" href="#"> Forget Password?</a>
+                        </div>
+
+                        <!-- Create login button -->
+                        <div id="loginButton">
+                            <button type="button" class="btn btn-primary">Login</button>
+                        </div>
+
+                        <!-- Create privacy policy link -->
+                        <div class="privacyPolicy">
+                            <a class="privacyPolicy" href="#">Privacy Policy & Terms of Use</a>
+                        </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="assets/javascript/login.js"></script>
 </body>
+
 </html>
