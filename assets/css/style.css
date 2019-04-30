@@ -1,0 +1,459 @@
+/* ------ GLOBAL ------ CSS */
+
+/* Background color */
+body{
+    background-color: #F5F7FA;
+}
+
+/* Styling for navbar */
+.navbar-brand {
+    padding-top: 20px;
+}
+
+/* Id for left side of logo */
+.logo1 {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #D69341;
+    float: left;
+}
+
+/* Id for right side of logo */
+.logo2 {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #2E6698;
+
+}
+
+/* Font styling for page title */
+.pageTitle {
+    font-size: 25px;
+    line-height: 29px;
+    color: #494949;
+    margin-top: 50px;
+}
+
+/* Determining width of the container for main content */
+.container {
+    width: 95%;
+}
+
+/* Get rid of border on the card */
+.card {
+    border-style: none;
+}
+
+/* Styling for container within the card */
+.formContainer {
+    margin: 10px;
+}
+
+/* Styling of font for form title */
+.formTitle {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+/* Styling of font for form input */
+/* #formInput {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    border-style: none;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+} */
+
+/* Styling for form line */
+hr {
+    border: .5px solid #A5A5A5;
+    margin-top: 4px;
+}
+
+
+
+/* ------ LOGIN PAGE CSS ------*/
+
+/* Styling for logo font and spacing */
+#logo {
+    font-family: forma-djr-micro, sans-serif;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+/* Id for left side of logo */
+#logo1-lg {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #D69341;
+    float: left;
+    font-size: 45px;
+}
+
+/* Id for right side of logo */
+#logo2-lg {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #2E6698;
+    font-size: 45px;
+}
+
+/* Styling of font for form input */
+#userId,
+#userPass {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    border-style: none;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+/* Spacing for password section */
+#passwordForm {
+    margin-top: 50px;
+}
+
+/* Forgot password font styling */
+#password {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 16px;
+    line-height: 12px;
+    text-decoration: none;
+}
+
+/* Spacing for login button */
+#loginButton {
+    margin-top: 50px;
+}
+
+/* Styling for font and palcement of the login button */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D69341;
+    border-style: none;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Setting styling for the hover state of the lgoin button */
+.btn:hover {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1B872;
+}
+
+/* Styling for font and spacing of the privacy policy link */
+#privacyPolicy {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#privacyLink {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 16px;
+    line-height: 12px;
+    text-decoration: none;
+}
+
+
+
+
+/* ------ MAIN-MENU PAGE CSS ------*/
+
+/* Font styling and spacing for lot address */
+#lotLocation {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+/* Spacing for main menu table card */
+#mainMenuForm {
+    margin-top: 50px;
+}
+
+/* Font styling and spacing for the table title */
+#table-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #494949;
+    font-size: 19px;
+    line-height: 17px;
+    padding-bottom: 30px;
+}
+
+/* Green dot styling */
+.dotG {
+    height: 10px;
+    width: 10px;
+    background-color: #7EBA74;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Red dot styling */
+.dotR {
+    height: 10px;
+    width: 10px;
+    background-color: #D04747;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Styling for font of name */
+#tableName {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+/* Styling for font of DL */
+#tableDL {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 16px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+/* Styling for font of time */
+#tableTime {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 16px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+/* Spacing for line break */
+#statusLine {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Check In button styling */
+#checkInButton {
+    padding-right: 18px;
+    padding-left: 18px;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+/* Check Out button styling */
+#checkOutButton {
+    background-color: #2E6698;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/* Spacing for both buttons */
+#mainButtons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Map card */
+#locationCard {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ------ CHECK IN FORM PAGE CSS ------*/
+
+#imageUpload {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.input-group {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.form-control {
+    border-style: none;
+}
+
+#formColor {
+    background-color: white;
+    opacity: 0;
+}
+
+
+/* Styling of font for form input */
+#firstNameInput,
+#lastNameInput,
+#plateInput,
+#vinInput {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    border-style: none;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+#firstNameForm {
+    margin-top: 20px;
+}
+
+#lastNameForm,
+#plateForm,
+#makeForm,
+#modelForm {
+    margin-top: 50px;
+}
+
+#formButton {
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#checkInCard {
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ------ VERIFIED PAGE CSS ------*/
+
+#verifiedTitle {
+    font-size: 25px;
+    line-height: 29px;
+    color: #494949;
+    margin-top: 50px;
+    text-align: center;   
+}
+
+
+/* ------ CHECK OUT LIST PAGE CSS ------*/
+
+#checkOutForm {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#name {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+    margin-top: 50px;
+}
+
+#driverId {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+#info {
+    margin-top: 30px;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+#answer {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 17px;  
+}
+
+#checkInInfo {
+    margin-top: 50px;
+}
+
+
+#dateTitle,
+#timeTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #494949;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+#dateAnswer,
+#timeAnswer {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 17px;  
+}
+
+#checkInAnswers {
+    margin-top: 10px;
+}
+
+img {
+    width: 15px;
+    margin-top: 25px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#checkMark {
+    width: 50px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
