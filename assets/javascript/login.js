@@ -11,27 +11,27 @@ var config = {
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      // User is signed in. Redirect to check-in-form
+// User is signed in. Redirect to check-in-form
       window.location.href = "./main-menu.html"
-  
-    } else {
-      // No user is signed in. if user is not signed in stay on login page 
-  
-      // window.location.href = "./login.html"
-    }
+    };
   });
-  
+// on click event listener to create login function
 $(document).ready(function() {
   $("#login").on("click", function login() {
+
+// prevents default form 
     event.preventDefault();
-    var userLogin = $("#userId").val() + '@gmail.com'
+
+// create variables to store the userId and userPass values 
+    var userLogin = $("#userId").val() + '@gmail.com';
     var userPassword = $("#userPass").val();
 
     console.log(userLogin);
     console.log(userPassword);
 
-    alert("youre logged in")
+    alert("youre logged in");
 
+// error code to be returned if login not successful
     firebase.auth().signInWithEmailAndPassword(userLogin, userPassword).catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
