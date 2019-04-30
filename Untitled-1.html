@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Cloud API Demo
+</title>
+
+<head>
+    <meta charset="UTF-8">
+    <title>unit-4-game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <script>
+
+        var v;
+        function toDataURL(src, callback) {
+            var image = new Image();
+            image.crossOrigin = 'Anonymous';
+
+            image.onload = function () {
+                var canvas = document.createElement('canvas');
+                var context = canvas.getContext('2d');
+                canvas.height = this.naturalHeight;
+                canvas.width = this.naturalWidth;
+                context.drawImage(this, 0, 0);
+                var dataURL = canvas.toDataURL('image/jpeg');
+                callback(dataURL);
+            };
+
+            image.src = src;
+        }
+
+        toDataURL("download.jpg", function (dataURL) {
+            v = dataURL;
+            console.log(dataURL);
+        });
+
+
+        $(document).ready(function () {
+            var APIKey = "sk_da4cd8072166e197d1db8085";
+
+            // Here we are building the URL we need to query the database
+            var queryURL = "https://api.openalpr.com/v2/recognize_bytes?recognize_vehicle=1&country=us&secret_key=" +
+                APIKey;
+
+
+            $.ajax({
+                url: queryURL,
+                method: "GET",
+                data: v
+            })
+                // We store all of the retrieved data inside of an object called "response"
+                .then(function (response) {
+
+                    // // Log the queryURL
+                    // console.log(queryURL);
+
+                    // // Log the resulting object
+                    console.log(response);
+
+                });
+        });
+
+
+    </script>
+</body>
+
+</html>
