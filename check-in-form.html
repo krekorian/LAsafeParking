@@ -40,20 +40,23 @@
         <!-- Title of page -->
         <h1 class="pageTitle">CHECK IN</h1>
 
-        <div id="plateImageUpload">
-                <img id="imageUpload" src="assets/images/camera-01.png" class="rounded" alt="...">
-        </div>
-        
-        <div class="input-group">
-            <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
-                    Upload Image <input type="file" id="imgInp">
-                </span>
-            </span>
-            <input type="text" class="form-control" id="formColor" readonly>
-        </div>
+        <div class="card" id="picCard">
+            <div class="card-body">
 
+                <div id="plateImageUpload">
+                    <img id="imageUpload" src="assets/images/camera-01.png" class="rounded" alt="...">
+                </div>
 
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file" id="uploadButton">
+                            Upload Image <input type="file" id="imgInp">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" id="formColor" readonly>
+                </div>
+            </div>
+        </div>
 
         <!-- Create Card for content -->
         <div class="card" id="checkInCard">
