@@ -15,15 +15,18 @@
     <!--CSS Link-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Font Link -->
+    <!-- Font Links -->
     <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 
 <body>
 
 
     <!-- Create container -->
-    <div class="container" id="logIn">
+    <div class="container">
 
         <!-- Large logo -->
         <div id="logo">
@@ -45,9 +48,9 @@
                         <!-- Form for location ID -->
                         <div class="form-group" id="locationIdForm">
                             <!-- Title Label -->
-                            <label for="formTitle" id="formTitle">Location ID</label>
+                            <label for="formTitle" class="formTitle">Location ID</label>
                             <!-- Input section -->
-                            <input class="form-control" id="formInput" placeholder="1234" type="number">
+                            <input class="form-control" id="userId" placeholder="1234" type="number">
                             <!-- Create line -->
                             <hr>
                         </div>
@@ -55,26 +58,26 @@
                         <!-- Form for location ID -->
                         <div class="form-group" id="passwordForm">
                             <!-- Title Label -->
-                            <label for="formTitle" id="formTitle">Password</label>
+                            <label for="formTitle" class="formTitle">Password</label>
                             <!-- Input section -->
-                            <input class="form-control" id="formInput" placeholder="******" type="text">
+                            <input class="form-control" id="userPass" placeholder="******" type="text">
                             <!-- Create line -->
                             <hr>
                         </div>
 
                         <!-- Create forgot password link -->
                         <div>
-                            <a class="password" href="#"> Forget Password?</a>
+                            <a id="password" href="#"> Forget Password?</a>
                         </div>
 
                         <!-- Create login button -->
                         <div id="loginButton">
-                            <button type="button" class="btn btn-primary">Login</button>
+                            <button type="button" class="btn btn-primary" id="login">Login</button>
                         </div>
 
                         <!-- Create privacy policy link -->
-                        <div class="privacyPolicy">
-                            <a class="privacyPolicy" href="#">Privacy Policy & Terms of Use</a>
+                        <div id="privacyPolicy">
+                            <a id="privacyLink" href="#">Privacy Policy & Terms of Use</a>
                         </div>                      
                     </form>
                 </div>
@@ -82,11 +85,15 @@
         </div>
     </div>
 
+    <!-- Firebase link -->
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 
+    <!-- Jquery link -->
     <script src="https://code.jquery.com/jquery.js"></script>
 
+    <!-- Javascript link -->
     <script src="assets/javascript/login.js"></script>
+    
 </body>
 
 </html>
