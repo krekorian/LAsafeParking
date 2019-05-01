@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LA SAFE PARKING</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Links -->
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Create container -->
+    <div class="container">
+
+        <!-- Nav Bar Container -->
+        <nav>
+            <!-- Link to main-menu -->
+            <a class="navbar-brand" href="main-menu.html">
+                <!-- Left side of logo -->
+                <div class="logo1">Safe</div>
+                <!-- Right side of logo -->
+                <div class="logo2">Stay</div>
+            </a>
+        </nav>
+
+        <!-- Title of page -->
+        <h1 class="pageTitle">PROFILE</h1>
+
+        <!-- Card that contains picture upload -->
+        <div class="card" id="picCard">
+            <div class="card-body">
+
+                <!-- Section for the picture to be uploaded to -->
+                <div id="plateImageUpload">
+                    <!-- Picture placeholder -->
+                    <img id="imageUpload" src="assets/images/camera-01.png" class="rounded" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Card for content -->
+        <div class="card" id="profileCard">
+            <div class="card-body">
+                <!-- Container for inside of the form -->
+                <div class="formContainer">
+                    <!-- Row for card title -->
+                    <div class="row">
+                        <!-- Text for card title -->
+                        <div class="col-12" id="name">Alexis Bieda</div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Text for card title -->
+                        <div class="col-12" id="driverId">SafeStay ID: 1234</div>
+                    </div>
+
+                    <div class="row" id="info">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="dlTitle">Driver’s License Number</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="dlAnswer">O9923288</div>
+                    </div>
+
+                    <div class="row" id="info">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="vinTitle">VIN</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="vinAnswer">2T1BU4EE3CC816297</div>
+                    </div>
+
+                    <div class="row" id="info">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="plateTitle">License Plate Number</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="plateAnswer">123CODE</div>
+                    </div>
+
+                    <div class="row" id="info">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="yearTitle">Year</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="yearAnswer">2000</div>
+                    </div>
+
+                    <div class="row" id="info">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="makeTitle">Car Make</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="makeAnswer">Mazda</div>
+                    </div>
+
+                    <div class="row" id="info">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="modelTitle">Car Model</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="modelAnswer">3</div>
+                    </div>
+
+                    <div class="row" id="checkInInfo">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="dateTitle">Date</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="timeTitle">Time</div>
+                    </div>
+
+                    <div class="row" id="checkInAnswers">
+                        <!-- Text for card title -->
+                        <div class="col-6" id="dateAnswer">MM/DD/YYYY</div>
+                        <!-- Text for card answer -->
+                        <div class="col-6" id="timeAnswer">00:00pm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Card for content -->
+        <div class="card" id="commentsCard">
+            <div class="card-body">
+                <!-- Container for inside of the form -->
+                <div class="formContainer">
+                    <!-- Comments form -->
+                    <div class="form-group">
+                        <!-- Title for comment box -->
+                        <label for="comment" id="name">Comments</label>
+                        <!-- Input text area -->
+                        <textarea class="form-control" rows="5" id="comments"
+                            placeholder="Add comments about the driver here."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="buttonSection">
+            <!-- Check Out button -->
+            <button type="button" class="btn btn-primary" id="checkOutBtn">Check Out</button>
+        </div>
+    </div>
+
+
+
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+    <!-- Jquery link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Javascript link -->
+    <script src="assets/javascript/login.js"></script>
+
+</body>
+
+</html>
