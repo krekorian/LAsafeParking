@@ -10,11 +10,25 @@ body{
     padding-top: 20px;
 }
 
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 12px;
+    color: #494949;
+    margin-left: 60%;
+    padding-top: 31px;
+}
+
+.nav-link:hover {
+    color: #F1B872;
+}
+
 /* Id for left side of logo */
 .logo1 {
     font-family: forma-djr-micro, sans-serif;
     font-weight: 200;
     font-style: italic;
+    font-size: 24px;
     color: #D69341;
     float: left;
 }
@@ -24,6 +38,7 @@ body{
     font-family: forma-djr-micro, sans-serif;
     font-weight: 400;
     font-style: italic;
+    font-size: 24px;
     color: #2E6698;
 
 }
@@ -58,16 +73,6 @@ body{
     font-size: 19px;
     line-height: 17px;
 }
-
-/* Styling of font for form input */
-/* #formInput {
-    font-family: 'Roboto', sans-serif;
-    color: #494949;
-    border-style: none;
-    background: none;
-    font-size: 19px;
-    line-height: 17px;
-} */
 
 /* Styling for form line */
 hr {
@@ -158,6 +163,7 @@ hr {
     margin-top: 30px;
 }
 
+/* Styling for link to privacy policy */
 #privacyLink {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -265,7 +271,7 @@ hr {
 /* Spacing for both buttons */
 #mainButtons {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* Map card */
@@ -278,36 +284,40 @@ hr {
 
 
 /* ------ CHECK IN FORM PAGE CSS ------*/
+
+/* Card container spacing */
 #picCard {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
+/* Width of image being uploaded */
 #imageUpload {
     width: 100%;
 }
 
+/* Image upload input */
 .input-group {
     margin-top: 30px;
     color: white;
 }
 
+/* Image upload input */
 .form-control {
     border-style: none;
 }
 
+/* Image upload input */
 #formColor {
     background-color: #E9E9E9;
-    /* opacity: 0; */
 }
 
+/* Image upload input button */
 .input-group-btn {
 background-color: #E9E9E9;
 }
 
-
-
-/* Styling of font for form input */
+/* Font for form input */
 #firstNameInput,
 #lastNameInput,
 #plateInput,
@@ -320,10 +330,12 @@ background-color: #E9E9E9;
     line-height: 17px;
 }
 
+/* Spacing for above the first form section */
 #firstNameForm {
     margin-top: 20px;
 }
 
+/* Spacing for above each form section */
 #lastNameForm,
 #plateForm,
 #makeForm,
@@ -331,6 +343,7 @@ background-color: #E9E9E9;
     margin-top: 50px;
 }
 
+/* Spacing for the button */
 #formButton {
     padding-right: 18px;
     padding-left: 18px;
@@ -338,123 +351,18 @@ background-color: #E9E9E9;
     margin-bottom: 20px;
 }
 
+/* Spacing of card container */
 #checkInCard {
     margin-bottom: 50px;
 }
 
-
-
-
-/* ------ VERIFIED PAGE CSS ------*/
-
-#verifiedTitle {
-    font-size: 25px;
-    line-height: 29px;
-    color: #494949;
-    margin-top: 50px;
-    text-align: center;   
-}
-
-
-/* ------ CHECK OUT LIST PAGE CSS ------*/
-
-#checkOutForm {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#name {
-    font-family: 'Roboto', sans-serif;
-    color: #494949;
-    background: none;
-    font-size: 19px;
-    line-height: 17px;
-    margin-top: 50px;
-}
-
-#driverId {
-    font-family: 'Roboto', sans-serif;
-    color: #A5A5A5;
-    font-size: 19px;
-    line-height: 17px;
-    margin-top: 10px;
-}
-
-#info {
-    margin-top: 30px;
-}
-
-#dlTitle,
-#vinTitle,
-#plateTitle,
-#yearTitle,
-#makeTitle,
-#modelTitle {
-    font-family: 'Roboto', sans-serif;
-    color: #494949;
-    background: none;
-    font-size: 19px;
-    line-height: 17px;
-}
-
-#dlAnswer,
-#vinAnswer,
-#plateAnswer,
-#yearAnswer,
-#makeAnswer,
-#modelAnswer {
-    font-family: 'Roboto', sans-serif;
-    color: #A5A5A5;
-    font-size: 19px;
-    line-height: 17px;  
-}
-
-#checkInInfo {
-    margin-top: 50px;
-}
-
-
-#dateTitle,
-#timeTitle {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #494949;
-    background: none;
-    font-size: 19px;
-    line-height: 17px;
-}
-
-#dateAnswer,
-#timeAnswer {
-    font-family: 'Roboto', sans-serif;
-    color: #A5A5A5;
-    font-size: 19px;
-    line-height: 17px;  
-}
-
-#checkInAnswers {
-    margin-top: 10px;
-}
-
-img {
-    width: 15px;
-    margin-top: 25px;
-}
-
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-#checkMark {
-    width: 50px;
-}
-
+/* Image upload button styling */
 .btn-file {
     position: relative;
     overflow: hidden;
 }
+
+/* Image upload button styling */
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
@@ -471,6 +379,175 @@ img {
     display: block;
 }
 
+/* Image width */
 #img-upload{
     width: 100%;
+}
+
+
+
+
+/* ------ VERIFIED PAGE CSS ------*/
+
+/* Font styling and placement for title */
+#verifiedTitle {
+    font-size: 25px;
+    line-height: 29px;
+    color: #494949;
+    margin-top: 50px;
+    text-align: center;   
+}
+
+
+/* ------ VERIFIED PAGE CSS ------*/
+
+/* Spacing for card container */
+#checkOutForm {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Font styling and spacing for driver name */
+#name {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    background: none;
+    font-size: 19px;
+    line-height: 17px;
+}
+
+#nameSpace {
+    margin-top: 50px;
+}
+
+/* Font styling and spacing for driver id */
+#driverId {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+/* Spacing for the name and id section */
+#info {
+    margin-top: 25px;
+}
+
+/* Font styling for output titles */
+#dlTitle,
+#vinTitle,
+#plateTitle,
+#yearTitle,
+#makeTitle,
+#modelTitle {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    background: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* Font styling for output answers */
+#dlAnswer,
+#vinAnswer,
+#plateAnswer,
+#yearAnswer,
+#makeAnswer,
+#modelAnswer {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 16px;
+    line-height: 22px;  
+}
+
+/* Styling for the section holding titles and answers */
+#checkInInfo {
+    margin-top: 50px;
+}
+
+/* Font styling for title for date and time */
+#dateTitle,
+#timeTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #494949;
+    background: none;
+    font-size: 19px;
+    line-height: 22px;
+}
+
+/* Font styling for answer for date and time */
+#dateAnswer,
+#timeAnswer {
+    font-family: 'Roboto', sans-serif;
+    color: #A5A5A5;
+    font-size: 19px;
+    line-height: 22px;  
+}
+
+/* Styling for the section holding date and time */
+#checkInAnswers {
+    margin-top: 10px;
+}
+
+/* Width and spacing of exit icon */
+img {
+    width: 15px;
+    margin-top: 25px;
+}
+
+/* Placement of exit icon */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Size of check mark */
+#checkMark {
+    width: 50px;
+}
+
+/* Font styling and spacing of text */
+#complete {
+    font-size: 25px;
+    line-height: 29px;
+    color: #494949;
+    margin-top: 50px;
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ------ CHECK OUT PROFILE PAGE CSS ------*/
+
+/* Spacing for prrofile card */
+#profileCard {
+    margin-bottom: 30px;
+}
+
+/* Comments input font styling */
+#comments {
+    font-family: 'Roboto', sans-serif;
+    color: #494949;
+    border-style: none;
+    background: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* Check Out button styling */
+#checkOutBtn {
+    background-color: #2E6698;
+    display: inline-block;
+}
+
+/* Spacing for both buttons */
+#buttonSection {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
