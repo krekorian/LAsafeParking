@@ -278,15 +278,17 @@ hr {
 
 
 /* ------ CHECK IN FORM PAGE CSS ------*/
+#picCard {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
 #imageUpload {
     width: 100%;
-    margin-top: 50px;
 }
 
 .input-group {
     margin-top: 30px;
-    margin-bottom: 50px;
     color: white;
 }
 
@@ -295,9 +297,14 @@ hr {
 }
 
 #formColor {
-    background-color: white;
-    opacity: 0;
+    background-color: #E9E9E9;
+    /* opacity: 0; */
 }
+
+.input-group-btn {
+background-color: #E9E9E9;
+}
+
 
 
 /* Styling of font for form input */
@@ -377,7 +384,12 @@ hr {
     margin-top: 30px;
 }
 
-#title {
+#dlTitle,
+#vinTitle,
+#plateTitle,
+#yearTitle,
+#makeTitle,
+#modelTitle {
     font-family: 'Roboto', sans-serif;
     color: #494949;
     background: none;
@@ -385,7 +397,12 @@ hr {
     line-height: 17px;
 }
 
-#answer {
+#dlAnswer,
+#vinAnswer,
+#plateAnswer,
+#yearAnswer,
+#makeAnswer,
+#modelAnswer {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
     font-size: 19px;
