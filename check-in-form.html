@@ -20,6 +20,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +36,7 @@
         <div class="group">
             <!-- Image and link for icon -->
             <a href="check-out-list.html"><img src="assets/images/back_arrow.png" class="img-fluid"
-            alt="Responsive image"></a>
+                    alt="Responsive image"></a>
         </div>
 
         <!-- Title of page -->
@@ -38,22 +44,19 @@
 
         <!-- Card that contains picture upload -->
         <div class="card" id="picCard">
-            <div class="card-body">
-
-                <!-- Section for the picture to be uploaded to -->
-                <div id="plateImageUpload">
-                    <!-- Picture placeholder -->
-                    <img id="imageUpload" src="assets/images/camera-01.png" class="rounded" alt="...">
-                </div>
-
-                <!-- Picture upload button and input -->
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <span class="btn btn-default btn-file" id="uploadButton">
+            <div class="card-body" id="picContainer">
+                <div class="container" >
+                    <div class="form-group" id="formGroup">
+                        <!-- <label>Upload Image</label> -->
+                        <img id='img-upload' />
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                            <span class="btn btn-default btn-file">
                             Upload Image <input type="file" id="imgInp">
-                        </span>
-                    </span>
-                    <input type="text" class="form-control" id="formColor" readonly>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,6 +121,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -129,7 +133,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 
     <!-- Javascript link -->
-    <script src="assets/javascript/login.js"></script>
+    <script src="assets/javascript/check-in-form.js"></script>
 
 </body>
 
