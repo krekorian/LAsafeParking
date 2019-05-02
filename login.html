@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LA SAFE PARKING</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Links -->
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Create container -->
+    <div class="container">
+
+        <!-- Large logo -->
+        <div id="logo">
+            <a class="navbar-brand" href="#">
+                <!-- Left side of logo -->
+                <div id="logo1-lg">Safe</div>
+                <!-- Right side of logo -->
+                <div id="logo2-lg">Stay</div>
+            </a>
+        </div>
+
+        <!-- Create Card for content -->
+        <div class="card">
+            <div class="card-body">
+                <!-- Container for inside of the form -->
+                <div class="formContainer">
+                    <!-- Create form -->
+                    <form>
+                        <!-- Form for location ID -->
+                        <div class="form-group" id="locationIdForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" class="formTitle">Location ID</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="userId" placeholder="1234" type="number">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Form for location ID -->
+                        <div class="form-group" id="passwordForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" class="formTitle">Password</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="userPass" placeholder="******" type="text">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Create forgot password link -->
+                        <div>
+                            <a id="password" href="#"> Forget Password?</a>
+                        </div>
+
+                        <!-- Create login button -->
+                        <div id="loginButton">
+                            <button type="button" class="btn btn-primary" id="login">Login</button>
+                        </div>
+
+                        <!-- Create privacy policy link -->
+                        <div id="privacyPolicy">
+                            <a id="privacyLink" href="#">Privacy Policy & Terms of Use</a>
+                        </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+    <!-- Jquery link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Javascript link -->
+    <script src="assets/javascript/login.js"></script>
+    
+</body>
+
+</html>
