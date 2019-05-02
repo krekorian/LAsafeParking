@@ -307,10 +307,12 @@ hr {
     margin-left: 30%;
 }
 
+/* Spacing for container the picture is in */
 #picContainer {
     padding: 0px;
 }
 
+/* Spacing for the group the picture and button are in */
 #formGroup {
     margin-bottom: 30px;
 }
