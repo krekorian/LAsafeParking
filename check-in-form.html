@@ -20,40 +20,43 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 
 <body>
     <!-- Create container -->
     <div class="container">
 
-        <!-- Nav Bar Container -->
-        <nav>
-            <!-- Link to main-menu -->
-            <a class="navbar-brand" href="main-menu.html">
-                <!-- Left side of logo -->
-                <div class="logo1">Safe</div>
-                <!-- Right side of logo -->
-                <div class="logo2">Stay</div>
-            </a>
-        </nav>
+        <!-- Create back icon -->
+        <div class="group">
+            <!-- Image and link for icon -->
+            <a href="check-out-list.html"><img src="assets/images/back_arrow.png" class="img-fluid"
+                    alt="Responsive image"></a>
+        </div>
 
         <!-- Title of page -->
         <h1 class="pageTitle">CHECK IN</h1>
 
+        <!-- Card that contains picture upload -->
         <div class="card" id="picCard">
-            <div class="card-body">
-
-                <div id="plateImageUpload">
-                    <img id="imageUpload" src="assets/images/camera-01.png" class="rounded" alt="...">
-                </div>
-
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <span class="btn btn-default btn-file" id="uploadButton">
+            <div class="card-body" id="picContainer">
+                <div class="container" >
+                    <div class="form-group" id="formGroup">
+                        <!-- <label>Upload Image</label> -->
+                        <img id='img-upload' />
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                            <span class="btn btn-default btn-file">
                             Upload Image <input type="file" id="imgInp">
-                        </span>
-                    </span>
-                    <input type="text" class="form-control" id="formColor" readonly>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,6 +121,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -129,7 +133,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 
     <!-- Javascript link -->
-    <script src="assets/javascript/login.js"></script>
+    <script src="assets/javascript/check-in-form.js"></script>
 
 </body>
 
