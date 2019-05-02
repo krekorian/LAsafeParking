@@ -1,6 +1,7 @@
 /* ------ GLOBAL ------ CSS */
 
 /* Background color */
+
 body{
     background-color: #F5F7FA;
 }
@@ -41,6 +42,11 @@ body{
     font-size: 24px;
     color: #2E6698;
 
+}
+
+/* Size for back and exit button */
+#ex {
+    width: 15px;
 }
 
 /* Font styling for page title */
@@ -188,7 +194,8 @@ hr {
 
 /* Spacing for main menu table card */
 #mainMenuForm {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 /* Font styling and spacing for the table title */
@@ -209,17 +216,20 @@ hr {
     border-radius: 50%;
     display: inline-block;
     padding-right: 10px;
+    position: relative;
+    top: -3px;
+
 }
 
 /* Red dot styling */
-.dotR {
+/* .dotR {
     height: 10px;
     width: 10px;
     background-color: #D04747;
     border-radius: 50%;
     display: inline-block;
     padding-right: 10px;
-}
+} */
 
 /* Styling for font of name */
 #tableName {
@@ -238,35 +248,36 @@ hr {
     margin-top: 10px;
 }
 
-/* Styling for font of time */
-#tableTime {
-    font-family: 'Roboto', sans-serif;
-    color: #A5A5A5;
-    font-size: 16px;
-    line-height: 12px;
-    margin-top: 10px;
-}
-
 /* Spacing for line break */
 #statusLine {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
+.row {
+    position: relative;
+}
+
 /* Check In button styling */
 #checkInButton {
-    padding-right: 18px;
-    padding-left: 18px;
-    display: inline-block;
-    margin-right: 40px;
+    padding-right: 5px;
+    padding-left: 5px;   
+    font-family: 'Roboto', sans-serif;
+    background-color: #D69341;
+    color: white;
+    border-style: none;
+    position: absolute;
+    margin-left: 294px;
+    bottom: 1px;
 }
 
 /* Check Out button styling */
-#checkOutButton {
+/* #checkOutButton {
     background-color: #2E6698;
-    display: inline-block;
-    margin-left: 40px;
-}
+    position: absolute;
+    margin-left: 294px;
+    bottom: 1px;
+} */
 
 /* Spacing for both buttons */
 #mainButtons {
@@ -277,7 +288,6 @@ hr {
 /* Map card */
 #locationCard {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 
@@ -486,8 +496,8 @@ hr {
 }
 
 /* Width and spacing of exit icon */
-img {
-    width: 15px;
+#imageUpload {
+    width: 100%;
     margin-top: 25px;
 }
 
