@@ -12,7 +12,8 @@ var config = {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
 // User is signed in. Redirect to check-in-form
-      window.location.href = "./main-menu.html"
+      window.location.href = "./main-menu.html";
+      
     };
   });
 // on click event listener to create login function
