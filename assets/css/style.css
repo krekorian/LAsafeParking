@@ -291,11 +291,6 @@ hr {
     margin-bottom: 30px;
 }
 
-/* Width of image being uploaded */
-#imageUpload {
-    width: 100%;
-}
-
 /* Image upload input */
 .input-group {
     margin-top: 30px;
@@ -307,14 +302,39 @@ hr {
     border-style: none;
 }
 
-/* Image upload input */
-#formColor {
-    background-color: #E9E9E9;
-}
-
 /* Image upload input button */
 .input-group-btn {
-background-color: #E9E9E9;
+    margin-left: 30%;
+}
+
+#picContainer {
+    padding: 0px;
+}
+
+#formGroup {
+    margin-bottom: 30px;
+}
+
+/* Image upload button styling */
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/* Image width */
+#img-upload{
+    width: 100%;
 }
 
 /* Font for form input */
@@ -354,34 +374,6 @@ background-color: #E9E9E9;
 /* Spacing of card container */
 #checkInCard {
     margin-bottom: 50px;
-}
-
-/* Image upload button styling */
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-/* Image upload button styling */
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-
-/* Image width */
-#img-upload{
-    width: 100%;
 }
 
 
