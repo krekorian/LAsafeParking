@@ -7,6 +7,7 @@ body {
 }
 
 /* Styling for navbar */
+
 .navbar-brand {
     padding-top: 20px;
 }
@@ -25,6 +26,7 @@ body {
 }
 
 /* Id for left side of logo */
+
 .logo1 {
     font-family: forma-djr-micro, sans-serif;
     font-weight: 200;
@@ -35,21 +37,23 @@ body {
 }
 
 /* Id for right side of logo */
+
 .logo2 {
     font-family: forma-djr-micro, sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
     color: #2E6698;
-
 }
 
 /* Size for back and exit button */
+
 #ex {
     width: 15px;
 }
 
 /* Font styling for page title */
+
 .pageTitle {
     font-size: 25px;
     line-height: 29px;
@@ -58,21 +62,25 @@ body {
 }
 
 /* Determining width of the container for main content */
+
 .container {
     width: 95%;
 }
 
 /* Get rid of border on the card */
+
 .card {
     border-style: none;
 }
 
 /* Styling for container within the card */
+
 .formContainer {
     margin: 10px;
 }
 
 /* Styling of font for form title */
+
 .formTitle {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -81,16 +89,16 @@ body {
 }
 
 /* Styling for form line */
+
 hr {
     border: .5px solid #A5A5A5;
     margin-top: 4px;
 }
 
-
-
 /* ------ LOGIN PAGE CSS ------*/
 
 /* Styling for logo font and spacing */
+
 #logo {
     font-family: forma-djr-micro, sans-serif;
     text-align: center;
@@ -100,6 +108,7 @@ hr {
 }
 
 /* Id for left side of logo */
+
 #logo1-lg {
     font-family: forma-djr-micro, sans-serif;
     font-weight: 200;
@@ -110,6 +119,7 @@ hr {
 }
 
 /* Id for right side of logo */
+
 #logo2-lg {
     font-family: forma-djr-micro, sans-serif;
     font-weight: 400;
@@ -119,8 +129,8 @@ hr {
 }
 
 /* Styling of font for form input */
-#userId,
-#userPass {
+
+#userId, #userPass {
     font-family: 'Roboto', sans-serif;
     color: #494949;
     border-style: none;
@@ -130,11 +140,13 @@ hr {
 }
 
 /* Spacing for password section */
+
 #passwordForm {
     margin-top: 50px;
 }
 
 /* Forgot password font styling */
+
 #password {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -144,11 +156,13 @@ hr {
 }
 
 /* Spacing for login button */
+
 #loginButton {
     margin-top: 50px;
 }
 
 /* Styling for font and palcement of the login button */
+
 .btn {
     font-family: 'Roboto', sans-serif;
     background-color: #D69341;
@@ -158,18 +172,21 @@ hr {
 }
 
 /* Setting styling for the hover state of the lgoin button */
+
 .btn:hover {
     font-family: 'Roboto', sans-serif;
     background-color: #F1B872;
 }
 
 /* Styling for font and spacing of the privacy policy link */
+
 #privacyPolicy {
     text-align: center;
     margin-top: 30px;
 }
 
 /* Styling for link to privacy policy */
+
 #privacyLink {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -178,12 +195,10 @@ hr {
     text-decoration: none;
 }
 
-
-
-
 /* ------ MAIN-MENU PAGE CSS ------*/
 
 /* Font styling and spacing for lot address */
+
 #lotLocation {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -193,12 +208,14 @@ hr {
 }
 
 /* Spacing for main menu table card */
+
 #mainMenuForm {
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
 /* Font styling and spacing for the table title */
+
 #table-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -209,6 +226,7 @@ hr {
 }
 
 /* Green dot styling */
+
 .dotG {
     height: 10px;
     width: 10px;
@@ -218,10 +236,10 @@ hr {
     padding-right: 10px;
     position: relative;
     top: -3px;
-
 }
 
 /* Red dot styling */
+
 /* .dotR {
     height: 10px;
     width: 10px;
@@ -232,6 +250,7 @@ hr {
 } */
 
 /* Styling for font of name */
+
 #tableName {
     font-family: 'Roboto', sans-serif;
     color: #494949;
@@ -240,6 +259,7 @@ hr {
 }
 
 /* Styling for font of DL */
+
 #tableDL {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -249,6 +269,7 @@ hr {
 }
 
 /* Spacing for line break */
+
 #statusLine {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -259,9 +280,10 @@ hr {
 }
 
 /* Check In button styling */
+
 #checkInButton {
     padding-right: 50px;
-    padding-left: 50px;   
+    padding-left: 50px;
     font-family: 'Roboto', sans-serif;
     background-color: #D69341;
     color: white;
@@ -270,9 +292,10 @@ hr {
 }
 
 /* Check Out button styling */
+
 #checkOutButton {
     padding-right: 10px;
-    padding-left: 10px;   
+    padding-left: 10px;
     font-family: 'Roboto', sans-serif;
     background-color: #2E6698;
     color: white;
@@ -283,54 +306,60 @@ hr {
 }
 
 /* Spacing for both buttons */
+
 #mainButtons {
     text-align: center;
     margin-top: 30px;
 }
 
 /* Map card */
+
 #locationCard {
     margin-top: 50px;
 }
 
-
-
-
 /* ------ CHECK IN FORM PAGE CSS ------*/
 
 /* Card container spacing */
+
 #picCard {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
 /* Image upload input */
+
 .input-group {
     margin-top: 30px;
     color: white;
 }
 
 /* Image upload input */
+
 .form-control {
     border-style: none;
 }
 
 /* Image upload input button */
+
 .input-group-btn {
     margin-left: 30%;
 }
 
 /* Spacing for container the picture is in */
+
 #picContainer {
     padding: 0px;
 }
 
 /* Spacing for the group the picture and button are in */
+
 #formGroup {
     margin-bottom: 30px;
 }
 
 /* Image upload button styling */
+
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
@@ -348,16 +377,15 @@ hr {
 }
 
 /* Image width */
-#img-upload{
+
+#img-upload {
     margin-top: 25px;
     width: 100%;
 }
 
 /* Font for form input */
-#firstNameInput,
-#lastNameInput,
-#plateInput,
-#vinInput {
+
+#firstNameInput, #lastNameInput, #plateInput, #vinInput {
     font-family: 'Roboto', sans-serif;
     color: #494949;
     border-style: none;
@@ -367,19 +395,19 @@ hr {
 }
 
 /* Spacing for above the first form section */
+
 #firstNameForm {
     margin-top: 20px;
 }
 
 /* Spacing for above each form section */
-#lastNameForm,
-#plateForm,
-#makeForm,
-#modelForm {
+
+#lastNameForm, #plateForm, #makeForm, #modelForm {
     margin-top: 50px;
 }
 
 /* Spacing for the button */
+
 #formButton {
     padding-right: 18px;
     padding-left: 18px;
@@ -388,38 +416,38 @@ hr {
 }
 
 /* Spacing of card container */
+
 #checkInCard {
     margin-bottom: 50px;
 }
 
-
-
-
 /* ------ VERIFIED PAGE CSS ------*/
 
 /* Font styling and placement for title */
+
 #verifiedTitle {
     font-size: 25px;
     line-height: 29px;
     color: #494949;
     margin-top: 50px;
-    text-align: center;   
+    text-align: center;
 }
 
 #ex {
     margin-top: 30px;
 }
 
-
 /* ------ VERIFIED PAGE CSS ------*/
 
 /* Spacing for card container */
+
 #checkOutForm {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 /* Font styling and spacing for driver name */
+
 #name {
     font-family: 'Roboto', sans-serif;
     color: #494949;
@@ -433,6 +461,7 @@ hr {
 }
 
 /* Font styling and spacing for driver id */
+
 #driverId {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
@@ -442,17 +471,14 @@ hr {
 }
 
 /* Spacing for the name and id section */
+
 #info {
     margin-top: 25px;
 }
 
 /* Font styling for output titles */
-#dlTitle,
-#vinTitle,
-#plateTitle,
-#yearTitle,
-#makeTitle,
-#modelTitle {
+
+#dlTitle, #vinTitle, #plateTitle, #yearTitle, #makeTitle, #modelTitle {
     font-family: 'Roboto', sans-serif;
     color: #494949;
     background: none;
@@ -461,26 +487,23 @@ hr {
 }
 
 /* Font styling for output answers */
-#dlAnswer,
-#vinAnswer,
-#plateAnswer,
-#yearAnswer,
-#makeAnswer,
-#modelAnswer {
+
+#dlAnswer, #vinAnswer, #plateAnswer, #yearAnswer, #makeAnswer, #modelAnswer {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
     font-size: 16px;
-    line-height: 22px;  
+    line-height: 22px;
 }
 
 /* Styling for the section holding titles and answers */
+
 #checkInInfo {
     margin-top: 50px;
 }
 
 /* Font styling for title for date and time */
-#dateTitle,
-#timeTitle {
+
+#dateTitle, #timeTitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: #494949;
@@ -490,63 +513,67 @@ hr {
 }
 
 /* Font styling for answer for date and time */
-#dateAnswer,
-#timeAnswer {
+
+#dateAnswer, #timeAnswer {
     font-family: 'Roboto', sans-serif;
     color: #A5A5A5;
     font-size: 19px;
-    line-height: 22px;  
+    line-height: 22px;
 }
 
 /* Styling for the section holding date and time */
+
 #checkInAnswers {
     margin-top: 10px;
 }
 
 /* Width and spacing of exit icon */
+
 #imageUpload {
     width: 100%;
     margin-top: 25px;
 }
 
 /* Placement of exit icon */
+
 .group:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 /* Size of check mark */
+
 #checkMark {
     margin-top: 30px;
     width: 50px;
 }
 
 /* Font styling and spacing of text */
+
 #complete {
     font-size: 25px;
     line-height: 29px;
     color: #494949;
     margin-top: 50px;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 50px;
 }
-
-
-
 
 /* ------ CHECK OUT PROFILE PAGE CSS ------*/
 
 /* Spacing for prrofile card */
+
 #profileCard {
     margin-bottom: 30px;
 }
 
-#img-upload{
+#img-upload {
     width: 100%;
 }
 
 /* Comments input font styling */
+
 #comments {
     font-family: 'Roboto', sans-serif;
     color: #494949;
@@ -557,23 +584,117 @@ hr {
 }
 
 /* Check Out button styling */
+
 #checkOutBtn {
     background-color: #2E6698;
     display: inline-block;
 }
 
 /* Spacing for both buttons */
+
 #buttonSection {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
-
-
-
 /* ------ MAPS PAGE CSS ------*/
 
+#logo1 {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #D69341;
+    float: left;
+}
+
+#logo2 {
+    color: #2E6698;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map, #right-panel {
+    height: 40%;
+    margin-left: 10px;
+    width: 95%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#floating-panel {
+    position: absolute;
+    margin-top: 210px;
+    top: 20px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#right-panel {
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    /* padding-left: 10px; */
+}
+
+#right-panel select, #right-panel input {
+    font-size: 15px;
+}
+
+#right-panel select {
+    width: 95%;
+}
+
+#right-panel i {
+    font-size: 12px;
+}
+
+#right-panel {
+    /* height: 100%;
+    float: right; */
+    /* margin-left: 20%;
+    width: 95%; */
+    /* overflow: auto; */
+}
+
+#map {
+    /* margin-right: 400px; */
+}
+
+#floating-panel {
+    background: #fff;
+    padding: 5px;
+    font-size: 14px;
+    color: red;
+    font-family: Arial;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    display: none;
+}
+
+@media print {
+    #map {
+        height: 500px;
+        margin: 0;
+    }
+    #right-panel {
+        float: none;
+        width: auto;
+    }
+}
 
 /* default styles here for older browsers. */
 
