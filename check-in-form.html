@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LA SAFE PARKING</title>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Links -->
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Create container -->
+    <div class="container">
+
+        <!-- Nav Bar Container -->
+        <nav>
+            <!-- Link to main-menu -->
+            <a class="navbar-brand" href="main-menu.html">
+                <!-- Left side of logo -->
+                <div class="logo1">Safe</div>
+                <!-- Right side of logo -->
+                <div class="logo2">Stay</div>
+            </a>
+        </nav>
+
+        <!-- Title of page -->
+        <h1 class="pageTitle">CHECK IN</h1>
+
+        <div class="card" id="picCard">
+            <div class="card-body">
+
+                <div id="plateImageUpload">
+                    <img id="imageUpload" src="assets/images/camera-01.png" class="rounded" alt="...">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file" id="uploadButton">
+                            Upload Image <input type="file" id="imgInp">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" id="formColor" readonly>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Card for content -->
+        <div class="card" id="checkInCard">
+            <div class="card-body">
+                <!-- Container for inside of the form -->
+                <div class="formContainer">
+                    <!-- Create form -->
+                    <form>
+
+                        <!-- Text for card title -->
+                        <div id="table-title">Driver Information</div>
+
+                        <!-- Form for first name -->
+                        <div class="form-group" id="firstNameForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" class="formTitle">First Name</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="firstNameInput" placeholder="First Name" type="text">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Form for last name -->
+                        <div class="form-group" id="lastNameForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" class="formTitle">Last Name</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="lastNameInput" placeholder="Last Name" type="text">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Form for plates -->
+                        <div class="form-group" id="plateForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" class="formTitle">License Plate Number</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="plateInput" placeholder="License Plate " type="text">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Form for car make -->
+                        <div class="form-group" id="makeForm">
+                            <!-- Title Label -->
+                            <label for="formTitle" class="formTitle">VIN</label>
+                            <!-- Input section -->
+                            <input class="form-control" id="vinInput" placeholder="VIN" type="text">
+                            <!-- Create line -->
+                            <hr>
+                        </div>
+
+                        <!-- Create login button -->
+                        <div>
+                            <button type="button" class="btn btn-primary" id="formButton">Check In</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+    <!-- Jquery link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Javascript link -->
+    <script src="assets/javascript/login.js"></script>
+
+</body>
+
+</html>
