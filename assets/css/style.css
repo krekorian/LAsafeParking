@@ -315,24 +315,27 @@ hr {
 
 /* Check In button styling */
 #checkInButton {
-    padding-right: 5px;
-    padding-left: 5px;   
+    padding-right: 50px;
+    padding-left: 50px;   
     font-family: 'Roboto', sans-serif;
     background-color: #D69341;
     color: white;
     border-style: none;
-    position: absolute;
-    margin-left: 294px;
-    bottom: 1px;
+    margin-top: 50px;
 }
 
 /* Check Out button styling */
-/* #checkOutButton {
+#checkOutButton {
+    padding-right: 10px;
+    padding-left: 10px;   
+    font-family: 'Roboto', sans-serif;
     background-color: #2E6698;
+    color: white;
+    border-style: none;
     position: absolute;
-    margin-left: 294px;
+    margin-left: 240px;
     bottom: 1px;
-} */
+}
 
 /* Spacing for both buttons */
 #mainButtons {
