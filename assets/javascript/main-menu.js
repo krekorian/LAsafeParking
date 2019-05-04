@@ -5,16 +5,32 @@ var config = {
     projectId: "lasafeparking",
     storageBucket: "lasafeparking.appspot.com",
     messagingSenderId: "647414711077"
+};
+firebase.initializeApp(config);
+
+var database = firebase.database();
+
+$(document).ready(function () {
+
+    database.ref().on("child_added", function (childSnapshot) {
+        console.log(childSnapshot);
+    });
+
+
+
+
+
+
+
+    function checkIn() {
+        $("#checkInButton").on("click", function () {
+            window.location.href = "./check-in-form.html";
+        });
     };
-    firebase.initializeApp(config);
-
-$(document).ready(function() {
 
 
 
 
-
-    
 });
 
 
