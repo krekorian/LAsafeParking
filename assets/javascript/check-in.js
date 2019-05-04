@@ -7,20 +7,22 @@ $(document).ready(function () {
     ref.once("value")
         .then(function (snapshot) {
             var name = snapshot.child("7EFZ117").val();
-            var firstName = snapshot.child("7EFZ117/first_name").val();
+            var firstName = snapshot.child("7EFZ117/checked").val();
             // ref.orderByKey().limitToFirst(1).once('value', function (snap) {
             //     var v = snap.val();
             //     console.log(v.constructor.name); // first item, in format {"<KEY>": "<VALUE>"}
 
             // });
-            var vrk = check_IfTHere(check_license);
-            console.log(vrk);
+
+            //console.log(firstName);
+            var vrk = check_IfTHere();
+            // console.log(vrk);
 
             // var newPostKey = firebase.database().ref().child('lot123/8XYD701').push().key;
             // console.log(newPostKey);
             var updates = {};
 
-            updates['/lot123/7EFZ117/checked'] = "No";
+            updates['/lot123/7EFZ117/last_name'] = "Rachel";
             firebase.database().ref().update(updates);
             // var name1 = snapshot.child("8XYD701");
             // firebase.database().ref("lot123").child("8XYD701").push({
@@ -41,14 +43,16 @@ function check_IfTHere(check_license) {
     var ischecked
     ref.on("child_added", function (childSnapshot) {
         var license = childSnapshot.val().license_plate_number;
+        var checked = childSnapshot.val().checked
         if (license === check_license) {
             ischecked = true;
-            console.log(ischecked);
+            // console.log(ischecked);
         }
-
+        console.log(license, checked);
     });
-    console.log(ischecked);
+    // console.log(ischecked);
     return ischecked;
+
 }
 
 
