@@ -1,3 +1,15 @@
+#logo1 {
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #D69341;
+    float: left;
+}
+
+#logo2 {
+    color: #2E6698;
+}
+
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
 
@@ -15,9 +27,11 @@ html, body {
     padding: 0;
 }
 
+body {}
+
 #floating-panel {
     position: absolute;
-    margin-top: 220px;
+    margin-top: 210px;
     top: 20px;
     left: 25%;
     z-index: 5;

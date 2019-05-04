@@ -3,27 +3,28 @@
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
-        <script src="maps.js"></script>
+        <script src="assets/js/app.js"></script>
         <!--Bootstrap CSS-->
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <link rel="stylesheet" href="maps.css">
         <title>Displaying Text Directions With setPanel()</title>
 
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Safe Stay</a>
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
+            <div id="logo">
+                <a class="navbar-brand" href="#">
+                    <!-- Left side of logo -->
+                    <div id="logo1">Safe</div>
+                    <!-- Right side of logo -->
+                    <div id="logo2">Stay</div>
+                </a>
+            </div>
         </header>
         <div id="floating-panel">
             <strong>Start:</strong>
