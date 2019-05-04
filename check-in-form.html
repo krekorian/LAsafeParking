@@ -22,22 +22,21 @@
 
 
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
 </head>
 
 <body>
     <!-- Create container -->
     <div class="container">
 
-        <!-- Create back icon -->
-        <div class="group">
-            <!-- Image and link for icon -->
-            <a href="check-out-list.html"><img src="assets/images/back_arrow.png" class="img-fluid"
-                    alt="Responsive image"></a>
-        </div>
+        <nav class="nav">
+            <a class="navbar-brand" href="main-menu.html">
+                <!-- Left side of logo -->
+                <div class="logo1">Safe</div>
+                <!-- Right side of logo -->
+                <div class="logo2">Stay</div>
+            </a>
+            <a class="nav-link" href="#" id="logout">Logout</a>
+        </nav>
 
         <!-- Title of page -->
         <h1 class="pageTitle">CHECK IN</h1>
@@ -45,15 +44,15 @@
         <!-- Card that contains picture upload -->
         <div class="card" id="picCard">
             <div class="card-body" id="picContainer">
-                <div class="container" >
+                <div class="container">
                     <div class="form-group" id="formGroup">
                         <!-- <label>Upload Image</label> -->
                         <img id='img-upload' />
                         <div class="input-group">
                             <span class="input-group-btn">
-                            <span class="btn btn-default btn-file">
-                            Upload Image <input type="file" id="imgInp">
-                            </span>
+                                <span class="btn btn-default btn-file">
+                                    Upload Image <input type="file" id="imgInp">
+                                </span>
                             </span>
                         </div>
                     </div>
@@ -102,16 +101,6 @@
                             <hr>
                         </div>
 
-                        <!-- Form for car make -->
-                        <div class="form-group" id="makeForm">
-                            <!-- Title Label -->
-                            <label for="formTitle" class="formTitle">VIN</label>
-                            <!-- Input section -->
-                            <input class="form-control" id="vinInput" placeholder="VIN" type="text">
-                            <!-- Create line -->
-                            <hr>
-                        </div>
-
                         <!-- Create login button -->
                         <div>
                             <button type="button" class="btn btn-primary" id="formButton">Check In</button>
@@ -121,9 +110,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 
 
     <!-- Firebase link -->

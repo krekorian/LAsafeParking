@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+#logo1 {
+=======
 /* ------ GLOBAL ------ CSS */
 
 /* Background color */
+
 body{
     background-color: #F5F7FA;
 }
@@ -28,11 +32,63 @@ body{
     font-family: forma-djr-micro, sans-serif;
     font-weight: 200;
     font-style: italic;
+<<<<<<< HEAD
+>>>>>>> master
+=======
     font-size: 24px;
+>>>>>>> master
     color: #D69341;
     float: left;
 }
 
+<<<<<<< HEAD
+#logo2 {
+    color: #2E6698;
+}
+
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* default styles here for older browsers. */
+
+/*Once containers hidden through js, media queries may be styled*/
+
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+}
+
+/* different techniques for iPad screening */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+=======
 /* Id for right side of logo */
 .logo2 {
     font-family: forma-djr-micro, sans-serif;
@@ -41,6 +97,11 @@ body{
     font-size: 24px;
     color: #2E6698;
 
+}
+
+/* Size for back and exit button */
+#ex {
+    width: 15px;
 }
 
 /* Font styling for page title */
@@ -188,7 +249,8 @@ hr {
 
 /* Spacing for main menu table card */
 #mainMenuForm {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 /* Font styling and spacing for the table title */
@@ -209,17 +271,20 @@ hr {
     border-radius: 50%;
     display: inline-block;
     padding-right: 10px;
+    position: relative;
+    top: -3px;
+
 }
 
 /* Red dot styling */
-.dotR {
+/* .dotR {
     height: 10px;
     width: 10px;
     background-color: #D04747;
     border-radius: 50%;
     display: inline-block;
     padding-right: 10px;
-}
+} */
 
 /* Styling for font of name */
 #tableName {
@@ -238,34 +303,38 @@ hr {
     margin-top: 10px;
 }
 
-/* Styling for font of time */
-#tableTime {
-    font-family: 'Roboto', sans-serif;
-    color: #A5A5A5;
-    font-size: 16px;
-    line-height: 12px;
-    margin-top: 10px;
-}
-
 /* Spacing for line break */
 #statusLine {
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
+.row {
+    position: relative;
+}
+
 /* Check In button styling */
 #checkInButton {
-    padding-right: 18px;
-    padding-left: 18px;
-    display: inline-block;
-    margin-right: 40px;
+    padding-right: 50px;
+    padding-left: 50px;   
+    font-family: 'Roboto', sans-serif;
+    background-color: #D69341;
+    color: white;
+    border-style: none;
+    margin-top: 50px;
 }
 
 /* Check Out button styling */
 #checkOutButton {
+    padding-right: 10px;
+    padding-left: 10px;   
+    font-family: 'Roboto', sans-serif;
     background-color: #2E6698;
-    display: inline-block;
-    margin-left: 40px;
+    color: white;
+    border-style: none;
+    position: absolute;
+    margin-left: 240px;
+    bottom: 1px;
 }
 
 /* Spacing for both buttons */
@@ -277,7 +346,6 @@ hr {
 /* Map card */
 #locationCard {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 
@@ -307,10 +375,12 @@ hr {
     margin-left: 30%;
 }
 
+/* Spacing for container the picture is in */
 #picContainer {
     padding: 0px;
 }
 
+/* Spacing for the group the picture and button are in */
 #formGroup {
     margin-bottom: 30px;
 }
@@ -484,8 +554,8 @@ hr {
 }
 
 /* Width and spacing of exit icon */
-img {
-    width: 15px;
+#imageUpload {
+    width: 100%;
     margin-top: 25px;
 }
 
@@ -521,6 +591,11 @@ img {
     margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
+#img-upload{
+    width: 100%;
+>>>>>>> master
+=======
 /* Comments input font styling */
 #comments {
     font-family: 'Roboto', sans-serif;
@@ -542,4 +617,5 @@ img {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+>>>>>>> master
 }

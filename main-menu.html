@@ -43,6 +43,24 @@
         <!-- Lot address -->
         <p id="lotLocation">11020 Kinross Ave, LA, CA 90024</p>
 
+        <button type="button" class="btn btn-primary" id="checkInButton">Check In</button>
+
+        <!-- Create card for map content -->
+        <div class="card" id="locationCard">
+            <div class="formContainer">
+                <div class="card-body">
+                    <!-- Card title -->
+                    <div class="row">
+                        <div class="col-12" id="table-title">Lot Locations</div>
+                    </div>
+
+                    <a href="indexmap.html"> <img src="assets/images/map.png" class="img-fluid"
+                            alt="Responsive image"></a>
+
+                </div>
+            </div>
+        </div>
+
         <!-- Create Card for content -->
         <div class="card" id="mainMenuForm">
             <div class="formContainer">
@@ -66,9 +84,11 @@
                                 <div class="col-12" id="tableName">Name</div>
                             </div>
                             <!-- Row for DL and time text -->
-                            <div class="row">
+                            <div class="row" style="position: relative;">
                                 <div class="col-8" id="tableDL">DL: XXXXXXXX</div>
-                                <div class="col-4" id="tableTime">00:00am</div>
+
+                                <button type="button" class="btn btn-primary" id="checkOutButton"
+                                    style="position: absolute" ;>Check Out</button>
                             </div>
                         </div>
                     </div>
@@ -76,50 +96,6 @@
                     <div id="statusLine">
                         <hr>
                     </div>
-
-                    <!-- Status dot -->
-                    <div class="row">
-                        <div class="col-1"> <span class="dotR"></span></div>
-                        <!-- Column for table text -->
-                        <div class="col-11">
-                            <!-- Row for name text -->
-                            <div class="row">
-                                <div class="col-12" id="tableName">Name</div>
-                            </div>
-                            <!-- Row for DL and time text -->
-                            <div class="row">
-                                <div class="col-8" id="tableDL">DL: XXXXXXXX</div>
-                                <div class="col-4" id="tableTime">00:00am</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Status line -->
-                    <div id="statusLine">
-                        <hr>
-                    </div>
-
-                    <!-- Status dot -->
-                    <div class="row">
-                        <div class="col-1"> <span class="dotG"></span></div>
-                        <!-- Column for table text -->
-                        <div class="col-11">
-                            <!-- Row for name text -->
-                            <div class="row">
-                                <div class="col-12" id="tableName">Name</div>
-                            </div>
-                            <!-- Row for DL and time text -->
-                            <div class="row">
-                                <div class="col-8" id="tableDL">DL: XXXXXXXX</div>
-                                <div class="col-4" id="tableTime">00:00am</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Status line -->
-                    <div id="statusLine">
-                        <hr>
-                    </div>
-
                 </div>
             </div>
         </div>
