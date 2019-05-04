@@ -22,11 +22,11 @@ $(document).ready(function () {
 
 
 
-    function checkIn() {
-        $("#checkInButton").on("click", function () {
-            window.location.href = "./check-in-form.html";
-        });
-    };
+    // function checkin() {
+    //     $("#checkInButton").on("click", function () {
+    //         window.location.href = "./check-in-form.html";
+    //     });
+    // };
 
 
 
