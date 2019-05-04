@@ -19,9 +19,7 @@ $(document).ready(function () {
             // var newPostKey = firebase.database().ref().child('lot123/8XYD701').push().key;
             // console.log(newPostKey);
             var updates = {};
-            // var postData = {
-            //     checked: "Yes"
-            // };
+
             updates['/lot123/7EFZ117/checked'] = "No";
             firebase.database().ref().update(updates);
             // var name1 = snapshot.child("8XYD701");
