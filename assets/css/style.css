@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+#logo1 {
+=======
 /* ------ GLOBAL ------ CSS */
 
 /* Background color */
@@ -29,11 +32,63 @@ body{
     font-family: forma-djr-micro, sans-serif;
     font-weight: 200;
     font-style: italic;
+<<<<<<< HEAD
+>>>>>>> master
+=======
     font-size: 24px;
+>>>>>>> master
     color: #D69341;
     float: left;
 }
 
+<<<<<<< HEAD
+#logo2 {
+    color: #2E6698;
+}
+
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* default styles here for older browsers. */
+
+/*Once containers hidden through js, media queries may be styled*/
+
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+}
+
+/* different techniques for iPad screening */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+=======
 /* Id for right side of logo */
 .logo2 {
     font-family: forma-djr-micro, sans-serif;
@@ -533,6 +588,11 @@ hr {
     margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
+#img-upload{
+    width: 100%;
+>>>>>>> master
+=======
 /* Comments input font styling */
 #comments {
     font-family: 'Roboto', sans-serif;
@@ -554,4 +614,5 @@ hr {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+>>>>>>> master
 }
