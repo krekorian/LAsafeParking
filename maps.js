@@ -1,58 +1,91 @@
 $(document).ready(function () {
+    var panelDiv = $("<div>");
+    panelDiv.attr("id", "floating-panel");
+    var i = $("<strong>Start:</strong>");
+    var m = $("<select id='start'>");
+    var g = $("<br>");
+    var a = $("<strong>End:</strong>");
+    var y = $("<select id='end'>");
+    panelDiv.append(i);
+    panelDiv.append(m);
+    panelDiv.append(g);
+    panelDiv.append(a);
+    panelDiv.append(y);
+    var mapDiv = $("<div id='map'>");
+    var rightDiv = $("<div id='right-panel'>");
+    $(".container").after(rightDiv);
+    $(".container").after(mapDiv);
+    $(".container").after(panelDiv);
     //your code here
-    var startadd = ['<option value="aldama, los angeles, ca">Aldama</option>',
-        '<option>Select Lot</option>',
-        '<option value="ucla los angeles, ca">Los Angeles</option>',
-        '<option value="100 Universal City Plaza, Universal City, CA 91608">Studio City</option>',
-        '<option value="200 Santa Monica Pier, Santa Monica, CA 90401">Santa Monica</option>',
-        '<option value="6925 Hollywood Blvd, Hollywood, CA 90028">Hollywood</option>',
-        '<option value="3835 Cross Creek Rd, Malibu, CA 90265">Malibu</option>',
-        '<option value="231 S Grevillea Ave, Inglewood, CA 90301">Inglewood</option>',
-        '<option value="7850 Melrose Ave, Los Angeles, CA 90046">Fairfax</option>'
-    ];
-    //loop through topics array to display button in start
-    function createOptions() {
-        //prevent duplicate buttons
-        $("#start").empty();
-        for (var i = 0; i < startadd.length; i++) {
-            //new element for button to be created
-            var newOption = $(startadd[i]
-            );
-            //give button id topic 
-            newOption.attr("id", "topic");
-            //newOption.attr("value", startadd.address);
-            //newOption.text(startadd.text);
-            $("#start").append(newOption);
+    //easy way "<option value="addres">TEXT</option>"
+    var startAdd = [
+        {
+            address: "",
+            text: "Select Lot"
+        },
+        {
+            address: "ucla los angeles, ca ",
+            text: "UCLA"
+        },
+        {
+            address: "100 Universal City Plaza, Universal City, CA 91608",
+            text: "Studio City"
+        },
+        {
+            address: "200 Santa Monica Pier, Santa Monica, CA 90401",
+            text: "Santa Monica"
+        },
+        {
+            address: "6925 Hollywood Blvd, Hollywood, CA 90028",
+            text: "Hollywood"
+        },
+        {
+            address: "3835 Cross Creek Rd, Malibu, CA 90265",
+            text: "Malibu"
+        },
+        {
+            address: "231 S Grevillea Ave, Inglewood, CA 90301",
+            text: "Inglewood"
+        },
+        {
+            address: "7850 Melrose Ave, Los Angeles, CA 90046",
+            text: "Fairfax"
         }
+    ];
+
+    function createOptions() {
+        $("#start").empty();
+        //create array to hold start <option> tags
+        var newOptions = [];
+        for (var i = 0; i < startAdd.length; i++) {
+            var newOption = $('<option>');
+            newOption.attr("value", startAdd[i].address); // add [i] here to index element
+            newOption.text(startAdd[i].text); // add [i] here to index element
+            newOptions.push(newOption); // add new option to the array
+        }
+        //appending=expensive, keep array of elements and then use .html to add array to <select>
+        $("#start").html(newOptions); // once loop is complete, add the array of elements to the DOM
+
     }
     createOptions();
 
     //for end selection
-    var endadd = ['<option>Select Lot</option>',
-        '<option value="ucla los angeles, ca">Los Angeles</option>',
-        '<option value="100 Universal City Plaza, Universal City, CA 91608">Studio City</option>',
-        '<option value="200 Santa Monica Pier, Santa Monica, CA 90401">Santa Monica</option>',
-        ' <option value="6925 Hollywood Blvd, Hollywood, CA 90028">Hollywood</option>',
-        '<option value="3835 Cross Creek Rd, Malibu, CA 90265">Malibu</option>',
-        '<option value="231 S Grevillea Ave, Inglewood, CA 90301">Inglewood</option>',
-        '<option value="7850 Melrose Ave, Los Angeles, CA 90046">Fairfax</option>'
-    ];
-    //loop through topics array to display button in start
     function createEndOptions() {
-        //prevent duplicate buttons
         $("#end").empty();
-        for (var i = 0; i < endadd.length; i++) {
-            //new element for button to be created
-            var newEndOption = $(endadd[i]
-            );
-            //give button id topic 
-            newEndOption.attr("id", "topic");
-            //newOption.attr("value", startadd.address);
-            //newOption.text(startadd.text);
-            $("#end").append(newEndOption);
+        //create array to hold start <option> tags
+        var newOptions = [];
+        for (var i = 0; i < startAdd.length; i++) {
+            var newOption = $('<option>');
+            newOption.attr("value", startAdd[i].address); // add [i] here to index element
+            newOption.text(startAdd[i].text); // add [i] here to index element
+            newOptions.push(newOption); // add new option to the array
         }
+        //appending=expensive, keep array of elements and then use .html to add array to <select>
+        $("#end").html(newOptions); // once loop is complete, add the array of elements to the DOM
+
     }
     createEndOptions();
+
 });
 
 function initMap() {
@@ -72,6 +105,8 @@ function initMap() {
     var onChangeHandler = function () {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
     };
+    // [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive.
+    //fixed violation by making onChangeHandler { passive: true }
     document.getElementById('start').addEventListener('change', onChangeHandler, { passive: true });
     document.getElementById('end').addEventListener('change', onChangeHandler, { passive: true });
 }
