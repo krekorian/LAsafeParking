@@ -1,3 +1,27 @@
+$(document).ready(function () {
+    //your code here
+    var startadd = ['<option value="aldama, los angeles, ca">Aldama</option>',
+        '<option value="ucla los angeles, ca">UCLA</option>',
+        '<option value="franklin high school los angeles, ca">franklin</option>'
+    ];
+    //loop through topics array to display button in start
+    function createOptions() {
+        //prevent duplicate buttons
+        $("#start").empty();
+        for (var i = 0; i < startadd.length; i++) {
+            //new element for button to be created
+            var newOption = $(startadd[i]
+            );
+            //give button id topic 
+            newOption.attr("id", "topic");
+            //newOption.attr("value", startadd.address);
+            //newOption.text(startadd.text);
+            $("#start").append(newOption);
+        }
+    }
+    createOptions();
+});
+
 function initMap() {
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var directionsService = new google.maps.DirectionsService;
@@ -15,8 +39,8 @@ function initMap() {
     var onChangeHandler = function () {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
     };
-    document.getElementById('start').addEventListener('change', onChangeHandler);
-    document.getElementById('end').addEventListener('change', onChangeHandler);
+    document.getElementById('start').addEventListener('change', onChangeHandler, { passive: true });
+    document.getElementById('end').addEventListener('change', onChangeHandler, { passive: true });
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
