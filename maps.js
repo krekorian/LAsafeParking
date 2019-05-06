@@ -1,8 +1,14 @@
 $(document).ready(function () {
     //your code here
     var startadd = ['<option value="aldama, los angeles, ca">Aldama</option>',
-        '<option value="ucla los angeles, ca">UCLA</option>',
-        '<option value="franklin high school los angeles, ca">franklin</option>'
+        '<option>Select Lot</option>',
+        '<option value="ucla los angeles, ca">Los Angeles</option>',
+        '<option value="100 Universal City Plaza, Universal City, CA 91608">Studio City</option>',
+        '<option value="200 Santa Monica Pier, Santa Monica, CA 90401">Santa Monica</option>',
+        '<option value="6925 Hollywood Blvd, Hollywood, CA 90028">Hollywood</option>',
+        '<option value="3835 Cross Creek Rd, Malibu, CA 90265">Malibu</option>',
+        '<option value="231 S Grevillea Ave, Inglewood, CA 90301">Inglewood</option>',
+        '<option value="7850 Melrose Ave, Los Angeles, CA 90046">Fairfax</option>'
     ];
     //loop through topics array to display button in start
     function createOptions() {
@@ -20,6 +26,33 @@ $(document).ready(function () {
         }
     }
     createOptions();
+
+    //for end selection
+    var endadd = ['<option>Select Lot</option>',
+        '<option value="ucla los angeles, ca">Los Angeles</option>',
+        '<option value="100 Universal City Plaza, Universal City, CA 91608">Studio City</option>',
+        '<option value="200 Santa Monica Pier, Santa Monica, CA 90401">Santa Monica</option>',
+        ' <option value="6925 Hollywood Blvd, Hollywood, CA 90028">Hollywood</option>',
+        '<option value="3835 Cross Creek Rd, Malibu, CA 90265">Malibu</option>',
+        '<option value="231 S Grevillea Ave, Inglewood, CA 90301">Inglewood</option>',
+        '<option value="7850 Melrose Ave, Los Angeles, CA 90046">Fairfax</option>'
+    ];
+    //loop through topics array to display button in start
+    function createEndOptions() {
+        //prevent duplicate buttons
+        $("#end").empty();
+        for (var i = 0; i < endadd.length; i++) {
+            //new element for button to be created
+            var newEndOption = $(endadd[i]
+            );
+            //give button id topic 
+            newEndOption.attr("id", "topic");
+            //newOption.attr("value", startadd.address);
+            //newOption.text(startadd.text);
+            $("#end").append(newEndOption);
+        }
+    }
+    createEndOptions();
 });
 
 function initMap() {
