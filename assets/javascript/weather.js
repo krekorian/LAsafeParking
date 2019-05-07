@@ -18,8 +18,14 @@ $(document).ready(function () {
             console.log(response);
             console.log(queryURL);
 
-
+            var iconcode = response.weather[0].icon;
+            var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
+            var icon = '<div id="icon"><img id="wicon" src="' + iconurl + '" alt="Weather icon"></div>';
+            $('#wicon').attr('src', iconurl);
             $("#temp").text("Temperature For ZIP Code" + " " + zip_code + " : " + response.main.temp + "°" + "F");
+            $("#temp").append(icon);
+            console.log("hello: " + response.weather[0].icon); //displays number instead of an image
+            // $("#temp").append(response.weather[0].main); //displays current weather status, no image
 
 
         });
@@ -39,7 +45,12 @@ function timeIt() {
             console.log(queryURL);
 
 
+            var iconcode = response.weather[0].icon;
+            var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
+            var icon = '<div id="icon"><img id="wicon" src="' + iconurl + '" alt="Weather icon"></div>';
+            $('#wicon').attr('src', iconurl);
             $("#temp").text("Temperature For ZIP Code" + " " + zip_code + " : " + response.main.temp + "°" + "F");
+            $("#temp").append(icon);
 
 
         });
