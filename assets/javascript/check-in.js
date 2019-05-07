@@ -84,7 +84,9 @@ function check_IfTHere(check_license) {
 
 }
 
-
+var date = new Date();
+var time = new Date().toLocaleTimeString();
+var date = new Date().toLocaleDateString();
 $("#formButton").on("click", function (event) {
     event.preventDefault();
     firstName = $("#firstNameInput").val().trim();
@@ -97,7 +99,9 @@ $("#formButton").on("click", function (event) {
     var ischecked = false;
     ref.once("value")
         .then(function (snapshot) {
-
+            var date = new Date();
+            var time = new Date().toLocaleTimeString();
+            var date = new Date().toLocaleDateString();
 
             var updates = {};
 
