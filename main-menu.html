@@ -1,109 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>LA SAFE PARKING</title>
+    <title>LA SAFE PARKING</title>
 
-        <!--Bootstrap Link-->
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!--CSS Link-->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- Font Links -->
-        <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+    <!-- Font Links -->
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto"
-            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
-        <!-- Create container -->
-        <div class="container">
+<body>
+    <!-- Create container -->
+    <div class="container">
 
-            <nav class="nav">
-                <a class="navbar-brand" href="main-menu.html">
-                    <!-- Left side of logo -->
-                    <div class="logo1">Safe</div>
-                    <!-- Right side of logo -->
-                    <div class="logo2">Stay</div>
-                </a>
-                <a class="nav-link" href="#" id="logout">Logout</a>
-            </nav>
+        <nav class="nav">
+            <a class="navbar-brand" href="main-menu.html">
+                <!-- Left side of logo -->
+                <div class="logo1">Safe</div>
+                <!-- Right side of logo -->
+                <div class="logo2">Stay</div>
+            </a>
+            <a class="nav-link" href="#" id="logout">Logout</a>
+        </nav>
 
-            <!-- Title of page -->
-            <h1 class="pageTitle">BRONXTON LOT</h1>
-            <h2 id="userEmail"></h2>
+        <!-- Title of page -->
+        <h1 class="pageTitle">BRONXTON LOT</h1>
+        <h2 id="userEmail"></h2>
 
-            <!-- Lot address -->
-            <p id="lotLocation">100 Universal City Plaza, Universal City, CA</p>
-            <button type="button" class="btn btn-primary" id="checkInButton">Check
-                In</button>
+        <!-- Lot address -->
+        <p id="lotLocation">100 Universal City Plaza, Universal City, CA</p>
+        <button type="button" class="btn btn-primary" id="checkInButton">Check
+            In</button>
 
-            <div id="temp"></div>
+        <div id="temp"></div>
 
-            <!-- Create card for map content -->
-            <div class="card" id="locationCard">
-                <div class="formContainer">
-                    <div class="card-body">
-                        <!-- Card title -->
-                        <div class="row">
-                            <div class="col-12" id="table-title">Lot Locations</div>
-                        </div>
-
-                        <a href="indexmap.html"> <img
-                                src="assets/images/map.png" class="img-fluid"
-                                id="map-img"
-                                alt="Responsive image"></a>
-
+        <!-- Create card for map content -->
+        <div class="card" id="locationCard">
+            <div class="formContainer">
+                <div class="card-body">
+                    <!-- Card title -->
+                    <div class="row">
+                        <div class="col-12" id="table-title">Lot Locations</div>
                     </div>
+
+                    <a href="indexmap.html"> <img src="assets/images/map.png" class="img-fluid" id="map-img"
+                            alt="Responsive image"></a>
+
                 </div>
             </div>
+        </div>
 
-            <!-- Create Card for content -->
-            <div class="card" id="mainMenuForm">
-                <div class="formContainer">
-                    <!-- Container for inside of the form -->
-                    <div class="card-body">
+        <!-- Create Card for content -->
+        <div class="card" id="mainMenuForm">
+            <div class="formContainer">
+                <!-- Container for inside of the form -->
+                <div class="card-body" id="lot">
 
-                        <!-- Row for card title -->
-                        <div class="row">
-                            <!-- Text for card title -->
-                            <div class="col-12" id="table-title">Lot Status</div>
-                        </div>
-
-                        <!-- Row for table -->
-                        <div class="row">
-                            <!-- Status dot -->
-                            <div class="col-1"> <span class="dotG"></span></div>
-                            <!-- Column for table text -->
-                            <div class="col-11">
-                                <!-- Row for name text -->
-                                <div class="row">
-                                    <div class="col-12" id="tableName">Name</div>
-                                </div>
-                                <!-- Row for DL and time text -->
-                                <div class="row" style="position: relative;">
-                                    <div class="col-8" id="tableDL">DL: XXXXXXXX</div>
-                                    <button type="button" class="btn
-                                        btn-primary" id="checkOutButton"
-                                        style="position: absolute" ;>Check Out</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Status line -->
-                        <div id="statusLine">
-                            <hr>
-                        </div>
+                    <!-- Row for card title -->
+                    <div class="row">
+                        <!-- Text for card title -->
+                        <div class="col-12" id="table-title">Lot Status</div>
                     </div>
+
+
                 </div>
             </div>
 
@@ -121,6 +93,6 @@
         <script src="assets/javascript/weather.js"></script>
 
 
-    </body>
+</body>
 
 </html>
