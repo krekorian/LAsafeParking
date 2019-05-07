@@ -598,9 +598,6 @@ hr {
     margin-bottom: 50px;
 }
 
-
-
-
 /* ------ MAPS PAGE CSS ------*/
 
 /* Always set the map height explicitly to define the size of the div
@@ -613,12 +610,11 @@ hr {
     width: 85%;
 }
 
-
 #right-panel {
     margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 30px;
-    width: 85%; 
+    width: 85%;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -632,7 +628,7 @@ html, body {
 #floating-panel {
     background-color: white;
     border: none;
-    border-radius: 10px; 
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
     font-family: 'Roboto', 'sans-serif';
@@ -644,7 +640,6 @@ html, body {
     margin-top: 10px;
 }
 
-
 select {
     /* text-transform: none; */
     background-color: white;
@@ -654,9 +649,12 @@ select {
 }
 
 /* #right-panel { */
-    /* font-family: 'Roboto', 'sans-serif';
+
+/* font-family: 'Roboto', 'sans-serif';
     line-height: 30px; */
-    /* padding-left: 10px; */
+
+/* padding-left: 10px; */
+
 /* } */
 
 /* #right-panel select, #right-panel input {
@@ -683,8 +681,11 @@ select {
     color: #A5A5A5;
     font-family: 'Roboto', 'sans-serif';
     border: none; */
-    /* box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4); */
-    /* display: none; */
+
+/* box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4); */
+
+/* display: none; */
+
 /* } */
 
 /* @media print {
@@ -703,62 +704,62 @@ select {
 /*Once containers hidden through js, media queries may be styled*/
 
 /* styles for browsers larger than 960px; */
+
 @media only screen and (min-width: 960px) {
     #map {
         margin-left: 140px;
-        width:67%;
+        width: 67%;
     }
-    
     #right-panel {
         margin-left: 140px;
-        width:67%; 
+        width: 67%;
     }
-
     .nav-link {
         margin-left: 75%;
     }
 }
 
 /* styles for browsers larger than 1440px; */
+
 @media only screen and (min-width: 1440px) {
     #map {
         margin-left: 160px;
         width: 75%;
     }
-    
     #right-panel {
         margin-left: 160px;
-        width: 75%; 
+        width: 75%;
     }
-
     .nav-link {
         margin-left: 85%;
     }
 }
 
 /* for sumo sized (mac) screens */
+
 @media only screen and (min-width: 2000px) {
     #map {
         margin-left: 160px;
         width: 75%;
     }
-    
     #right-panel {
         margin-left: 160px;
-        width: 75%; 
+        width: 75%;
     }
-
     .nav-link {
         margin-left: 85%;
     }
 }
 
 /* styles for mobile browsers smaller than 480px; (iPhone) */
+
 /* @media only screen and (max-device-width: 480px) {
 } */
 
 /* iPad screening */
- /* default iPad screens */
+
+/* default iPad screens */
+
 /* @media only screen and (device-width: 768px) {
     #map {
         margin-left: 160px;
