@@ -1,3 +1,4 @@
+// var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
 //Must have added src incorrect will not load once i add into document load function
 //will keep outside until I figure it out 
@@ -7,8 +8,13 @@ function initMap() {
     var directionsService = new google.maps.DirectionsService;
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 9,
-        center: { lat: 34.052235, lng: -118.2437 }
-    });
+        center: {lat: 34.052235, lng: -118.2437},
+        disableDefaultUI: true
+      });
+    // var map = new google.maps.Map(document.getElementById('map'), {
+    //     zoom: 9,
+    //     center: { lat: 34.052235, lng: -118.2437 }
+    // });
     directionsDisplay.setMap(map);
     directionsDisplay.setPanel(document.getElementById('right-panel'));
 
@@ -33,9 +39,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     }, function (response, status) {
         if (status === 'OK') {
             directionsDisplay.setDirections(response);
-        } else {
-            window.alert('Directions request failed due to ' + status);
-        }
+        } 
+        // else {
+        //     window.alert('Directions request failed due to ' + status);
+        // }
     });
 }
 //will load code on page load \
@@ -66,3 +73,4 @@ $(document).ready(function () {
     })
     //add new page js here
 });
+
