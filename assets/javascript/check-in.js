@@ -109,7 +109,7 @@ $("#formButton").on("click", function (event) {
             updates['/' + lotNumber + '/' + licensePlateNumber + '/' + 'Time'] = time;
             updates['/' + lotNumber + '/' + licensePlateNumber + '/' + 'Date'] = date;
             firebase.database().ref().update(updates);
-            window.location.href = "./verfied.html";
+            window.location.href = "./verified.html";
 
         });
 

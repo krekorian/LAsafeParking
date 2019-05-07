@@ -9,7 +9,7 @@ var config = {
 firebase.initializeApp(config);
 
 $(document).ready(function () {
-
+    console.log(licensePlateNumber);
     var local_date = new Date();
     console.log(local_date.toString());
     var ref = firebase.database().ref('/' + lotNumber + '/' + licensePlateNumber);
