@@ -27,6 +27,7 @@ $(document).ready(function () {
     // create variables to store the userId and userPass values 
     var userLogin = $("#userId").val() + '@gmail.com';
     var userPassword = $("#userPass").val();
+    var lotNumber = $("#userId").val();
 
     console.log(userLogin);
     console.log(userPassword);

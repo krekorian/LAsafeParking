@@ -12,16 +12,12 @@ var database = firebase.database();
 
 $(document).ready(function () {
 
+    // On click event listener to take to check in form 
     $("#checkInButton").on("click", function () {
         window.location.href = "./check-in-form.html"
-    })
-
+    });
+    // 
     database.ref("lot123").on("child_added", function (childSnapshot) {
-        //console.log(childSnapshot);
-
-        var snapshot = childSnapshot.val();
-        //console.log(snapshot);
-
 
         var license = childSnapshot.val().license_plate_number;
         var checked = childSnapshot.val().checked;
@@ -29,27 +25,46 @@ $(document).ready(function () {
         var lastName = childSnapshot.val().last_name;
 
         if (checked === "Yes") {
-            console.log(firstName);
-            console.log(lastName);
-            console.log(license);
-
-            $("#tableName").text(firstName + " " + lastName);
-            $("#tableDL").text(license);
+            var full = firstName + " " + lastName
+            newUser(full, license)
         };
-
-
-
     });
 
+    var newUser = function (driverName, DL) {
 
+        var container = $(`<div class="container" id="newDriver">
+        <div class="row" id="userRow">
+            <!-- Status dot -->
+            <div class="col-1"> <span class="dotG"></span></div>
+            <!-- Column for table text -->
+            <div class="col-11">
+                <!-- Row for name text -->
+                <div class="row">
+                    <div class="col-12" id="tableName">${driverName}</div>
+                </div>
+                <!-- Row for DL and time text -->
+                <div class="row" style="position: relative;">
+                    <div class="col-8" id="tableDL">DL: ${DL}</div>
 
+                    <button type="button" class="btn btn-primary" id="checkOutButton"
+                        style="position: absolute" ;>Check Out</button>
+                </div>
+            </div>
+        </div>
+        <!-- Status line -->
+        <div id="statusLine">
+            <hr>
+        </div>
+    </div>`);
 
+        return $('#lot').append(container);
 
+    };
 
+    $("#checkOutButton").on("click", function () {
+        window.location.href = "./check-out-profile.html";
 
-
-
-
+    });
 
     $("#logout").on("click", function logout() {
         firebase.auth().signOut();
