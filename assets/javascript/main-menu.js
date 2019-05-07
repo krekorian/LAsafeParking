@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     };
 
-    $("#checkOutButton").on("click", function () {
+    $("#lot").on("click", '#checkOutButton', function () {
         window.location.href = "./check-out-profile.html";
 
     });
