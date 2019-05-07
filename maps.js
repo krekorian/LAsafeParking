@@ -1,16 +1,16 @@
 $(document).ready(function () {
     var panelDiv = $("<div>");
     panelDiv.attr("id", "floating-panel");
-    var i = $("<strong>Start:</strong>");
-    var m = $("<select id='start'>");
-    var g = $("<br>");
-    var a = $("<strong>End:</strong>");
-    var y = $("<select id='end'>");
-    panelDiv.append(i);
-    panelDiv.append(m);
-    panelDiv.append(g);
-    panelDiv.append(a);
-    panelDiv.append(y);
+    var st = $("<strong>Start:</strong>");
+    var s = $("<select id='start'>");
+    var b = $("<br>");
+    var en = $("<strong>End:</strong>");
+    var e = $("<select id='end'>");
+    panelDiv.append(st);
+    panelDiv.append(s);
+    panelDiv.append(b);
+    panelDiv.append(en);
+    panelDiv.append(e);
     var mapDiv = $("<div id='map'>");
     var rightDiv = $("<div id='right-panel'>");
     $(".container").after(rightDiv);
@@ -93,7 +93,8 @@ function initMap() {
     var directionsService = new google.maps.DirectionsService;
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 9,
-        center: { lat: 34.052235, lng: -118.2437 }
+        center: { lat: 34.052235, lng: -118.2437 },
+        disableDefaultUI: true
     });
     directionsDisplay.setMap(map);
     directionsDisplay.setPanel(document.getElementById('right-panel'));
