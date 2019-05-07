@@ -201,6 +201,14 @@ hr {
 /* ------ MAIN-MENU PAGE CSS ------*/
 
 /* Font styling and spacing for lot address */
+#temp {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #494949;
+    font-size: 19px;
+    line-height: 17px;
+    padding-bottom: 30px;
+}
 
 #lotLocation {
     font-family: 'Roboto', sans-serif;
@@ -644,60 +652,6 @@ select {
     color: #494949;
 }
 
-<<<<<<< HEAD
-/* #right-panel { */
-
-/* font-family: 'Roboto', 'sans-serif';
-    line-height: 30px; */
-
-/* padding-left: 10px; */
-
-/* } */
-
-/* #right-panel select, #right-panel input {
-    font-size: 15px;
-} */
-
-/* #right-panel select {
-    width: 95%;
-} */
-
-/* #right-panel i {
-    font-size: 12px;
-} */
-
-/* .gmnoprint {
-    background: none;
-    margin: 0px;
-} */
-
-/* #floating-panel {
-    background: #fff;
-    padding: 5px;
-    font-size: 14px;
-    color: #A5A5A5;
-    font-family: 'Roboto', 'sans-serif';
-    border: none; */
-
-/* box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4); */
-
-/* display: none; */
-
-/* } */
-
-/* @media print {
-    #map {
-        height: 500px;
-        margin: 0;
-    }
-    #right-panel {
-        float: none;
-        width: auto;
-    }
-} */
-
-=======
->>>>>>> master
 /* default styles here for older browsers. */
 
 /*Once containers hidden through js, media queries may be styled*/
@@ -789,7 +743,6 @@ select {
         margin-left: 85%;
     }
 
-<<<<<<< HEAD
 /* for sumo sized (mac) screens */
 
 @media only screen and (min-width: 2000px) {
@@ -803,21 +756,8 @@ select {
     }
     .nav-link {
         margin-left: 85%;
-=======
-    #checkOutButton {
-        margin-left: 870px;
     }
 
-    #map-img {
-        width: 100%
-    }
-
-    #dlTitle, #vinTitle, #plateTitle, #yearTitle, #makeTitle, #modelTitle {
-        padding-left: 25%;
->>>>>>> master
-    }
-
-<<<<<<< HEAD
 /* styles for mobile browsers smaller than 480px; (iPhone) */
 
 /* @media only screen and (max-device-width: 480px) {
@@ -831,20 +771,6 @@ select {
     #map {
         margin-left: 160px;
         width: 75%;
-=======
-    #name {
-        padding-left: 25%;
-    }
-    
-    /* Font styling and spacing for driver id */
-    
-    #driverId {
-        padding-left: 25%;
-    }
-
-    #dateTitle {
-        padding-left: 25%; 
->>>>>>> master
     }
     
     /* Font styling for answer for date and time */
@@ -857,9 +783,5 @@ select {
         margin-top: 80px;
         margin-right: 285px;
     }
-<<<<<<< HEAD
-} */
-=======
 }
 
->>>>>>> master

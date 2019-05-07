@@ -1,4 +1,4 @@
-var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+// var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
 //Must have added src incorrect will not load once i add into document load function
 //will keep outside until I figure it out 
