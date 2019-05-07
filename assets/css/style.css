@@ -195,6 +195,9 @@ hr {
     text-decoration: none;
 }
 
+
+
+
 /* ------ MAIN-MENU PAGE CSS ------*/
 
 /* Font styling and spacing for lot address */
@@ -237,17 +240,6 @@ hr {
     position: relative;
     top: -3px;
 }
-
-/* Red dot styling */
-
-/* .dotR {
-    height: 10px;
-    width: 10px;
-    background-color: #D04747;
-    border-radius: 50%;
-    display: inline-block;
-    padding-right: 10px;
-} */
 
 /* Styling for font of name */
 
@@ -317,6 +309,9 @@ hr {
 #locationCard {
     margin-top: 50px;
 }
+
+
+
 
 /* ------ CHECK IN FORM PAGE CSS ------*/
 
@@ -421,6 +416,10 @@ hr {
     margin-bottom: 50px;
 }
 
+
+
+
+
 /* ------ VERIFIED PAGE CSS ------*/
 
 /* Font styling and placement for title */
@@ -436,8 +435,6 @@ hr {
 #ex {
     margin-top: 30px;
 }
-
-/* ------ VERIFIED PAGE CSS ------*/
 
 /* Spacing for card container */
 
@@ -600,8 +597,7 @@ hr {
 
 /* ------ MAPS PAGE CSS ------*/
 
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+/* Always set the map height explicitly to define the size of the div */
 
 #map {
     margin-top: 30px;
@@ -648,6 +644,7 @@ select {
     color: #494949;
 }
 
+<<<<<<< HEAD
 /* #right-panel { */
 
 /* font-family: 'Roboto', 'sans-serif';
@@ -699,6 +696,8 @@ select {
     }
 } */
 
+=======
+>>>>>>> master
 /* default styles here for older browsers. */
 
 /*Once containers hidden through js, media queries may be styled*/
@@ -717,6 +716,14 @@ select {
     .nav-link {
         margin-left: 75%;
     }
+
+    #checkOutButton {
+        margin-left: 490px;
+    }
+
+    #map-img {
+        width: 100%
+    }
 }
 
 /* styles for browsers larger than 1440px; */
@@ -733,8 +740,8 @@ select {
     .nav-link {
         margin-left: 85%;
     }
-}
 
+<<<<<<< HEAD
 /* for sumo sized (mac) screens */
 
 @media only screen and (min-width: 2000px) {
@@ -748,9 +755,21 @@ select {
     }
     .nav-link {
         margin-left: 85%;
+=======
+    #checkOutButton {
+        margin-left: 870px;
     }
-}
 
+    #map-img {
+        width: 100%
+    }
+
+    #dlTitle, #vinTitle, #plateTitle, #yearTitle, #makeTitle, #modelTitle {
+        padding-left: 25%;
+>>>>>>> master
+    }
+
+<<<<<<< HEAD
 /* styles for mobile browsers smaller than 480px; (iPhone) */
 
 /* @media only screen and (max-device-width: 480px) {
@@ -764,14 +783,35 @@ select {
     #map {
         margin-left: 160px;
         width: 75%;
+=======
+    #name {
+        padding-left: 25%;
     }
     
-    #right-panel {
-        margin-left: 160px;
-        width: 75%; 
+    /* Font styling and spacing for driver id */
+    
+    #driverId {
+        padding-left: 25%;
     }
 
-    .nav-link {
-        margin-left: 100%;
+    #dateTitle {
+        padding-left: 25%; 
+>>>>>>> master
     }
+    
+    /* Font styling for answer for date and time */
+    
+    #dateAnswer {
+        padding-left: 25%;
+    }
+
+    #ex {
+        margin-top: 80px;
+        margin-right: 285px;
+    }
+<<<<<<< HEAD
 } */
+=======
+}
+
+>>>>>>> master
