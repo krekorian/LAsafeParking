@@ -19,7 +19,7 @@ $(document).ready(function () {
             console.log(queryURL);
 
 
-            $("#temp").text("Temperature (F) in ZIP code" + "" + zip_code + " : " + response.main.temp + "" + "F");
+            $("#temp").text("Temperature For ZIP Code" + " " + zip_code + " : " + response.main.temp + "°" + "F");
 
 
         });
@@ -39,7 +39,7 @@ function timeIt() {
             console.log(queryURL);
 
 
-            $("#temp").text("Temperature (F) in ZIP code" + "" + zip_code + " : " + response.main.temp + "" + "F");
+            $("#temp").text("Temperature For ZIP Code" + " " + zip_code + " : " + response.main.temp + "°" + "F");
 
 
         });
