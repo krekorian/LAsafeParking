@@ -202,12 +202,14 @@ hr {
 
 /* Font styling and spacing for lot address */
 #temp {
+    position: fixed;
+    top: 159px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #494949;
-    font-size: 19px;
+    font-size: 15px;
     line-height: 17px;
-    padding-bottom: 30px;
+    margin-top: 50px;
 }
 
 #lotLocation {
@@ -282,13 +284,13 @@ hr {
 /* Check In button styling */
 
 #checkInButton {
-    padding-right: 50px;
-    padding-left: 50px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #D69341;
-    color: white;
-    border-style: none;
-    margin-top: 50px;
+   padding-right: 50px;
+   padding-left: 50px;
+   font-family: 'Roboto', sans-serif;
+   background-color: #D69341;
+   color: white;
+   border-style: none;
+   margin-top: 104px;
 }
 
 /* Check Out button styling */
@@ -315,7 +317,7 @@ hr {
 /* Map card */
 
 #locationCard {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
