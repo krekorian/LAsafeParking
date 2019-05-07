@@ -12,20 +12,32 @@ var database = firebase.database();
 
 $(document).ready(function () {
 
-    database.ref().on("child_added", function (childSnapshot) {
-        console.log(childSnapshot);
+    $("#checkInButton").on("click", function () {
+        window.location.href = "./check-in-form.html"
+    })
 
-        ref.on("child_added", function (childSnapshot) {
-            var ref = firebase.database().ref("lot123");
-            var license = childSnapshot.val().license_plate_number;
-            var checked = childSnapshot.val().checked
+    database.ref("lot123").on("child_added", function (childSnapshot) {
+        //console.log(childSnapshot);
 
-            console.log(license, checked);
+        var snapshot = childSnapshot.val();
+        //console.log(snapshot);
 
-            if (checked === yes) {
 
-            }
-        });
+        var license = childSnapshot.val().license_plate_number;
+        var checked = childSnapshot.val().checked;
+        var firstName = childSnapshot.val().first_name;
+        var lastName = childSnapshot.val().last_name;
+
+        if (checked === "Yes") {
+            console.log(firstName);
+            console.log(lastName);
+            console.log(license);
+
+            $("#tableName").text(firstName + " " + lastName);
+            $("#tableDL").text(license);
+        };
+
+
 
     });
 
