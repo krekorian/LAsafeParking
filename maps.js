@@ -122,8 +122,11 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     }, function (response, status) {
         if (status === 'OK') {
             directionsDisplay.setDirections(response);
-        } else {
-            window.alert('Directions request failed due to ' + status);
         }
     });
 }
+
+$("#logout").on("click", function logout() {
+    firebase.auth().signOut();
+    window.location.href = "./login.html"
+});
