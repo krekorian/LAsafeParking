@@ -14,6 +14,19 @@ $(document).ready(function () {
 
     database.ref().on("child_added", function (childSnapshot) {
         console.log(childSnapshot);
+
+        ref.on("child_added", function (childSnapshot) {
+            var ref = firebase.database().ref("lot123");
+            var license = childSnapshot.val().license_plate_number;
+            var checked = childSnapshot.val().checked
+
+            console.log(license, checked);
+
+            if (checked === yes) {
+
+            }
+        });
+
     });
 
 
@@ -22,14 +35,14 @@ $(document).ready(function () {
 
 
 
-    // function checkin() {
-    //     $("#checkInButton").on("click", function () {
-    //         window.location.href = "./check-in-form.html";
-    //     });
-    // };
 
 
 
+
+    $("#logout").on("click", function logout() {
+        firebase.auth().signOut();
+        window.location.href = "./login.html"
+    });
 
 });
 
