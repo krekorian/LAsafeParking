@@ -46,7 +46,7 @@ $(document).ready(function () {
                 <div class="row" style="position: relative;">
                     <div class="col-8" id="tableDL">DL: ${DL}</div>
 
-                    <button type="button" class="btn btn-primary" id="checkOutButton"
+                    <button type="button" class="btn btn-primary" id="checkOutButton" name= ${DL}
                         style="position: absolute" ;>Check Out</button>
                 </div>
             </div>
@@ -62,6 +62,9 @@ $(document).ready(function () {
     };
 
     $("#lot").on("click", '#checkOutButton', function () {
+        var checkoutLicensePlate = $(this).attr('name');
+        console.log(checkoutLicensePlate);
+        localStorage.setItem('checkoutLicensePlate', checkoutLicensePlate);
         window.location.href = "./check-out-profile.html";
 
     });
