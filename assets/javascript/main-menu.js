@@ -16,20 +16,23 @@ $(document).ready(function () {
     $("#checkInButton").on("click", function () {
         window.location.href = "./check-in-form.html"
     });
-    // 
+    // Firebase reference to child location in database create a snapshot of data stored there
     database.ref("lot123").on("child_added", function (childSnapshot) {
 
+        // create variables to store the value of the snapshot taken from the database
         var license = childSnapshot.val().license_plate_number;
         var checked = childSnapshot.val().checked;
         var firstName = childSnapshot.val().first_name;
         var lastName = childSnapshot.val().last_name;
 
+        // If statement to check if user is logged in...if yes, then run the newUser function (seen below)
         if (checked === "Yes") {
             var full = firstName + " " + lastName
             newUser(full, license)
         };
     });
 
+    // newUser function to dynamically create div to display drivers name and license number
     var newUser = function (driverName, DL) {
 
         var container = $(`<div class="container" id="newDriver">
@@ -57,15 +60,18 @@ $(document).ready(function () {
         </div>
     </div>`);
 
+        // Append to container to main-menu.html page
         return $('#lot').append(container);
 
     };
 
+    // On click event listener when user clicks check out button takes user to check-out-profile.html...have to target #lot since it is the parent div that the check out button has been dynamically added to. 
     $("#lot").on("click", '#checkOutButton', function () {
         window.location.href = "./check-out-profile.html";
 
     });
 
+    // On click event listener to log out user and return to login page. 
     $("#logout").on("click", function logout() {
         firebase.auth().signOut();
         window.location.href = "./login.html"
