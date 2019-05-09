@@ -344,7 +344,7 @@ hr {
 /* Image upload input button */
 
 .input-group-btn {
-  margin-left: 30%;
+  margin-left: 43%;
 }
 
 /* Spacing for container the picture is in */
@@ -688,6 +688,9 @@ select {
     font-size: 12px;
     bottom: 1px;
   }
+  #stylez {
+    margin-left: 73px;
+  }
 }
 
 /* Iphone X/6/7/8 */
@@ -721,6 +724,11 @@ select {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #stylez {
+    margin-left: 73px;
+  }
+}
 /* styles for browsers larger than 960px; */
 
 @media only screen and (min-width: 960px) {
@@ -796,6 +804,6 @@ select {
 
 #stylez {
   position: unset;
-  margin-left: 150px;
+  margin-left: -30px;
   width: inherit;
 }
