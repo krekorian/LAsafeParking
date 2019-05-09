@@ -1,22 +1,22 @@
 //var mapDiv = $("<div id='map'>");
 $(document).ready(function() {
-  var panelDiv = $("<div class='container'>");
-  panelDiv.attr("id", "floating-panel");
-  var st = $("<strong>Start:</strong>");
-  var s = $("<select id='start'>");
-  var b = $("<br>");
-  var en = $("<strong>End:</strong>");
-  var e = $("<select id='end'>");
-  panelDiv.append(st);
-  panelDiv.append(s);
-  panelDiv.append(b);
-  panelDiv.append(en);
-  panelDiv.append(e);
+  //   var panelDiv = $("<div class='container'>");
+  //   panelDiv.attr("id", "floating-panel");
+  //   var st = $("<strong>Start:</strong>");
+  //   var s = $("<select id='start'>");
+  //   var b = $("<br>");
+  //   var en = $("<strong>End:</strong>");
+  //   var e = $("<select id='end'>");
+  //   panelDiv.append(st);
+  //   panelDiv.append(s);
+  //   panelDiv.append(b);
+  //   panelDiv.append(en);
+  //   panelDiv.append(e);
   //var mapDiv = $("<div id='map'>");
   // var rightDiv = $("<div id='right-panel'>");
   //$("#map").after(rightDiv);
   //$(".container").after(mapDiv);
-  $("#map").before(panelDiv);
+  // $("#map").before(panelDiv);
   //your code here
   //easy way "<option value="addres">TEXT</option>"
   var startAdd = [
