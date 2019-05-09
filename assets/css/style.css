@@ -195,21 +195,19 @@ hr {
     text-decoration: none;
 }
 
-
-
-
 /* ------ MAIN-MENU PAGE CSS ------*/
 
 /* Font styling and spacing for lot address */
+
 #temp {
-    position: fixed;
-    top: 159px;
+    /* position: fixed; */
+    /* top: 159px; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #494949;
     font-size: 15px;
     line-height: 17px;
-    margin-top: 50px;
+    margin-top: -95px;
 }
 
 #lotLocation {
@@ -284,13 +282,13 @@ hr {
 /* Check In button styling */
 
 #checkInButton {
-   padding-right: 50px;
-   padding-left: 50px;
-   font-family: 'Roboto', sans-serif;
-   background-color: #D69341;
-   color: white;
-   border-style: none;
-   margin-top: 104px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #D69341;
+    color: white;
+    border-style: none;
+    margin-top: 104px;
 }
 
 /* Check Out button styling */
@@ -317,11 +315,8 @@ hr {
 /* Map card */
 
 #locationCard {
-    margin-top: 30px;
+    margin-top: 61px;
 }
-
-
-
 
 /* ------ CHECK IN FORM PAGE CSS ------*/
 
@@ -425,10 +420,6 @@ hr {
 #checkInCard {
     margin-bottom: 50px;
 }
-
-
-
-
 
 /* ------ VERIFIED PAGE CSS ------*/
 
@@ -643,7 +634,12 @@ html, body {
     text-align: center;
     color: #2E6698;
     /* position: relative; */
+
     margin-top: 50px;
+
+  
+    margin-left: 9px;
+    /* width: 85%; */
 }
 
 select {
@@ -659,11 +655,11 @@ select {
 /*Once containers hidden through js, media queries may be styled*/
 
 /* Iphone X/6/7/8 */
+
 @media only screen and (min-width: 320px) {
     .nav-link {
         margin-left: 46%;
     }
-
     #checkOutButton {
         margin-left: 150px;
         padding-right: 10px;
@@ -671,15 +667,15 @@ select {
         font-size: 12px;
         bottom: 1px;
     }
-
 }
 
 /* Iphone X/6/7/8 */
-@media only screen and (min-width: 375px) {
-    .nav-link {
-        margin-left: 55%;
-    }
 
+@media only screen and (min-width: 375px) {
+    /*not needed causes logout to start on a new line below logo*/
+    /* .nav-link {
+        margin-left: 55%;
+    } */
     #checkOutButton {
         margin-left: 200px;
         padding-right: 10px;
@@ -687,15 +683,14 @@ select {
         font-size: 12px;
         bottom: 1px;
     }
-
 }
 
 /* Iphone 6/7/8 Plus */
+
 @media only screen and (min-width: 414px) {
     .nav-link {
         margin-left: 59%;
     }
-
     #checkOutButton {
         margin-left: 240px;
         padding-right: 10px;
@@ -704,7 +699,6 @@ select {
         bottom: 1px;
     }
 }
-
 
 /* styles for browsers larger than 960px; */
 
@@ -720,11 +714,9 @@ select {
     .nav-link {
         margin-left: 75%;
     }
-
     #checkOutButton {
         margin-left: 490px;
     }
-
     #map-img {
         width: 100%
     }
@@ -760,31 +752,23 @@ select {
     .nav-link {
         margin-left: 85%;
     }
-
-/* styles for mobile browsers smaller than 480px; (iPhone) */
-
-/* @media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    /* @media only screen and (max-device-width: 480px) {
 } */
-
-/* iPad screening */
-
-/* default iPad screens */
-
-/* @media only screen and (device-width: 768px) {
+    /* iPad screening */
+    /* default iPad screens */
+    /* @media only screen and (device-width: 768px) {
     #map {
         margin-left: 160px;
         width: 75%;
     }
     
     /* Font styling for answer for date and time */
-    
     #dateAnswer {
         padding-left: 25%;
     }
-
     #ex {
         margin-top: 80px;
         margin-right: 285px;
     }
 }
-
