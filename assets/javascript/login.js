@@ -41,8 +41,6 @@ $(document).ready(function () {
     firebase.auth().signInWithEmailAndPassword(userLogin, userPassword).catch(function (error) {
       var errorCode = error.code;
       var errorMessage = error.message;
-
-      alert("Error:" + errorMessage);
     });
 
   })
