@@ -129,5 +129,6 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 
 $("#logout").on("click", function logout() {
     firebase.auth().signOut();
+    localStorage.clear();
     window.location.href = "./login.html"
 });
