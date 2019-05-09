@@ -49,7 +49,7 @@ $(document).ready(function () {
                 <div class="row" style="position: relative;">
                     <div class="col-8" id="tableDL">DL: ${DL}</div>
 
-                    <button type="button" class="btn btn-primary" id="checkOutButton"
+                    <button type="button" class="btn btn-primary" id="checkOutButton" name= ${DL}
                         style="position: absolute" ;>Check Out</button>
                 </div>
             </div>
@@ -67,6 +67,9 @@ $(document).ready(function () {
 
     // On click event listener when user clicks check out button takes user to check-out-profile.html...have to target #lot since it is the parent div that the check out button has been dynamically added to. 
     $("#lot").on("click", '#checkOutButton', function () {
+        var checkoutLicensePlate = $(this).attr('name');
+        console.log(checkoutLicensePlate);
+        localStorage.setItem('checkoutLicensePlate', checkoutLicensePlate);
         window.location.href = "./check-out-profile.html";
 
     });

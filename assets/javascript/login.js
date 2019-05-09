@@ -24,10 +24,13 @@ $(document).ready(function () {
     // prevents default form 
     event.preventDefault();
 
+
     // create variables to store the userId and userPass values 
     var userLogin = $("#userId").val() + '@gmail.com';
     var userPassword = $("#userPass").val();
     var lotNumber = $("#userId").val();
+    lotNumber = "lot" + lotNumber;
+    localStorage.setItem('lotNumber', lotNumber);
 
     console.log(userLogin);
     console.log(userPassword);

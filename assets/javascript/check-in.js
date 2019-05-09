@@ -92,11 +92,10 @@ $("#formButton").on("click", function (event) {
     firstName = $("#firstNameInput").val().trim();
     lastName = $("#lastNameInput").val().trim();
     licensePlateNumber = $("#plateInput").val();
-
+    console.log(licensePlateNumber);
     var ref = firebase.database().ref(lotNumber);
     // console.log(ref);
-    var check_license = "7EFZ117";
-    var ischecked = false;
+
     ref.once("value")
         .then(function (snapshot) {
             var date = new Date();
@@ -110,7 +109,7 @@ $("#formButton").on("click", function (event) {
             updates['/' + lotNumber + '/' + licensePlateNumber + '/' + 'Date'] = date;
             firebase.database().ref().update(updates);
             window.location.href = "./verified.html";
-
+            localStorage.setItem('licensePlateNumber', licensePlateNumber);
         });
 
 });
