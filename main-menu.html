@@ -42,8 +42,8 @@
 
         <!-- Lot address -->
         <p id="lotLocation">100 Universal City Plaza, Universal City, CA</p>
-
-        <button type="button" class="btn btn-primary" id="checkInButton">Check In</button>
+        <button type="button" class="btn btn-primary" id="checkInButton">Check
+            In</button>
 
         <div id="temp"></div>
 
@@ -67,52 +67,28 @@
         <div class="card" id="mainMenuForm">
             <div class="formContainer">
                 <!-- Container for inside of the form -->
-                <div class="card-body">
+                <div class="card-body" id="lot">
 
                     <!-- Row for card title -->
                     <div class="row">
                         <!-- Text for card title -->
                         <div class="col-12" id="table-title">Lot Status</div>
                     </div>
-
-                    <!-- Row for table -->
-                    <div class="row">
-                        <!-- Status dot -->
-                        <div class="col-1"> <span class="dotG"></span></div>
-                        <!-- Column for table text -->
-                        <div class="col-11">
-                            <!-- Row for name text -->
-                            <div class="row">
-                                <div class="col-12" id="tableName">Name</div>
-                            </div>
-                            <!-- Row for DL and time text -->
-                            <div class="row" style="position: relative;">
-                                <div class="col-8" id="tableDL">DL: XXXXXXXX</div>
-
-                                <button type="button" class="btn btn-primary" id="checkOutButton"
-                                    style="position: absolute";>Check Out</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Status line -->
-                    <div id="statusLine">
-                        <hr>
-                    </div>
                 </div>
             </div>
+
+
         </div>
 
+        <!-- Firebase link -->
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+        <!-- Jquery link -->
+        <script src="https://code.jquery.com/jquery.js"></script>
 
-    </div>
-
-    <!-- Firebase link -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-
-    <!-- Jquery link -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-    <!-- Javascript link -->
-    <script src="assets/javascript/main-menu.js"></script>
+        <!-- Javascript link -->
+        <script src="assets/javascript/main-menu.js"></script>
+        <!-- Javascript link -->
+        <script src="assets/javascript/weather.js"></script>
 
 
 </body>

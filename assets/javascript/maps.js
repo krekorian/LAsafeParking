@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var panelDiv = $("<div>");
+    var panelDiv = $("<div class='container'>");
     panelDiv.attr("id", "floating-panel");
     var st = $("<strong>Start:</strong>");
     var s = $("<select id='start'>");
@@ -89,19 +89,20 @@ $(document).ready(function () {
 });
 
 function initMap() {
+    //used for directions output
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var directionsService = new google.maps.DirectionsService;
+    //will display map image on <div id="map">
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 9,
+        //LA
         center: { lat: 34.052235, lng: -118.2437 },
+        //remove buttons on map
         disableDefaultUI: true
     });
     directionsDisplay.setMap(map);
+    //direction set on this element
     directionsDisplay.setPanel(document.getElementById('right-panel'));
-
-    var control = document.getElementById('floating-panel');
-    control.style.display = 'block';
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 
     var onChangeHandler = function () {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -122,8 +123,11 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     }, function (response, status) {
         if (status === 'OK') {
             directionsDisplay.setDirections(response);
-        } else {
-            window.alert('Directions request failed due to ' + status);
         }
     });
 }
+
+$("#logout").on("click", function logout() {
+    firebase.auth().signOut();
+    window.location.href = "./login.html"
+});

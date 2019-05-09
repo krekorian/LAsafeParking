@@ -46,7 +46,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     });
 }
 //will load code on page load \
-$(function () {
+$(document).ready(function () {
     //login js
     $("#login").on("click", function login() {
 
