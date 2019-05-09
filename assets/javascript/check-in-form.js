@@ -81,6 +81,7 @@ $(document).ready(function () {
     $("#logout").on("click", function logout() {
         firebase.auth().signOut();
         window.location.href = "./login.html"
+        localStorage.clear();
     });
 
 });
