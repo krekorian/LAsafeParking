@@ -13,8 +13,8 @@ $(document).ready(function() {
   panelDiv.append(en);
   panelDiv.append(e);
   //var mapDiv = $("<div id='map'>");
-  var rightDiv = $("<div id='right-panel'>");
-  $("#map").after(rightDiv);
+  // var rightDiv = $("<div id='right-panel'>");
+  //$("#map").after(rightDiv);
   //$(".container").after(mapDiv);
   $("#map").before(panelDiv);
   //your code here
