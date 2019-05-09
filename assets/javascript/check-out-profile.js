@@ -1,6 +1,20 @@
 var lotNumber = localStorage.getItem('lotNumber');
 var licensePlateNumber = localStorage.getItem('checkoutLicensePlate');
 $(document).ready(function () {
+    var storageRef = firebase.storage();
+
+
+    storageRef.ref('plateImages/' + lotNumber + '/' + licensePlateNumber + '.jpg').getDownloadURL().then(function (url) {
+
+
+        // Or inserted into an <img> element:
+        $('#plateImageUpload').html('<img id="imageUpload" src=' + url + ' />');
+    }).catch(function (error) {
+        // Handle any errors
+    });
+
+
+
 
     // On click event...user clicks on check out button and is re-routed to check-out-confirm.html
     $("#checkOutBtn").on("click", function () {
