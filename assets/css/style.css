@@ -605,6 +605,7 @@ hr {
     height: 70%;
     margin-left: 30px;
     width: 85%;
+    max-width: inherit;
 }
 
 #right-panel {
@@ -637,6 +638,7 @@ html, body {
     margin-top: 10px;
     margin-left: 9px;
     /* width: 85%; */
+    max-width: inherit;
 }
 
 select {
