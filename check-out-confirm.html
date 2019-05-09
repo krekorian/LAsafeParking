@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>LA SAFE PARKING</title>
 
     <!--Bootstrap Link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!--CSS Link-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Font Links -->
-    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Create container -->
     <div class="container">
+      <!-- Create exit icon -->
+      <div class="group">
+        <!-- Image and link for icon -->
+        <a href="main-menu.html"
+          ><img
+            src="assets/images/ex.png"
+            id="ex"
+            class="img-fluid float-right"
+            alt="Responsive image"
+        /></a>
+      </div>
 
-        <!-- Create exit icon -->
-        <div class="group">
-            <!-- Image and link for icon -->
-            <a href="main-menu.html"><img src="assets/images/ex.png" id="ex" class="img-fluid float-right"
-                    alt="Responsive image"></a>
+      <div id="verifiedTitle">
+        <!-- Row for card title -->
+        <div class="row">
+          <!-- Text for card title -->
+          <div class="col-12" id="name"></div>
         </div>
 
-        <div id="verifiedTitle">
-            <!-- Row for card title -->
-            <div class="row">
-                <!-- Text for card title -->
-                <div class="col-12" id="name">Alexis Bieda</div>
-            </div>
-
-            <div class="row">
-                <!-- Text for card title -->
-                <div class="col-12" id="driverId">SafeStay ID: 1234</div>
-            </div>
+        <div class="row">
+          <!-- Text for card title -->
+          <div class="col-12" id="driverId"></div>
         </div>
+      </div>
 
-        <!-- Create check mark image -->
-        <div class="text-center">
-            <img src="assets/images/check.png" class="rounded" id="checkMark" alt="...">
-        </div>
+      <!-- Create check mark image -->
+      <div class="text-center">
+        <img
+          src="assets/images/check.png"
+          class="rounded"
+          id="checkMark"
+          alt="..."
+        />
+      </div>
 
-        <!-- Text saying the check in is complete -->
-        <h1 id="verifiedTitle">CHECK OUT COMPLETE</h1>
-
+      <!-- Text saying the check in is complete -->
+      <h1 id="verifiedTitle">CHECK OUT COMPLETE</h1>
     </div>
 
     <!-- Firebase link -->
@@ -64,7 +77,5 @@
 
     <script src="assets/javascript/firebase-local.js"></script>
     <script src="assets/javascript/checkout-confirm.js"></script>
-
-</body>
-
+  </body>
 </html>

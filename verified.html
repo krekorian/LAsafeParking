@@ -1,109 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>LA SAFE PARKING</title>
 
     <!--Bootstrap Link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <!--CSS Link-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Font Links -->
-    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kxz2gkm.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Create container -->
     <div class="container">
+      <!-- Create exit icon -->
+      <div class="group">
+        <!-- Image and link for icon -->
+        <a href="main-menu.html"
+          ><img
+            src="assets/images/ex.png"
+            id="ex"
+            class="img-fluid float-right"
+            alt="Responsive image"
+        /></a>
+      </div>
 
-        <!-- Create exit icon -->
-        <div class="group">
-            <!-- Image and link for icon -->
-            <a href="main-menu.html"><img src="assets/images/ex.png" id="ex" class="img-fluid float-right"
-                    alt="Responsive image"></a>
-        </div>
+      <!-- Title of page -->
+      <h1 id="verifiedTitle">VERIFIED</h1>
 
-        <!-- Title of page -->
-        <h1 id="verifiedTitle">VERIFIED</h1>
+      <!-- Create check mark image -->
+      <div class="text-center">
+        <img
+          src="assets/images/check.png"
+          class="rounded"
+          id="checkMark"
+          alt="..."
+        />
+      </div>
 
-        <!-- Create check mark image -->
-        <div class="text-center">
-            <img src="assets/images/check.png" class="rounded" id="checkMark" alt="...">
-        </div>
+      <!-- Row for card title -->
+      <div class="row" id="nameSpace">
+        <!-- Text for card title -->
+        <div class="col-12" id="name"></div>
+      </div>
 
-        <!-- Row for card title -->
-        <div class="row" id="nameSpace">
-            <!-- Text for card title -->
-            <div class="col-12" id="name">Alexis Bieda</div>
-        </div>
+      <div class="row">
+        <!-- Text for card title -->
+        <div class="col-12" id="driverId"></div>
+      </div>
 
-        <div class="row">
-            <!-- Text for card title -->
-            <div class="col-12" id="driverId">SafeStay ID: 1234</div>
-        </div>
-
-        <!-- <div class="row" id="info"> -->
-            <!-- Text for card title -->
-            <!-- <div class="col-8" id="dlTitle">Driver’s License Number</div> -->
-            <!-- Text for card answer -->
-            <!-- <div class="col-4" id="dlAnswer">O9923288</div>
+      <!-- <div class="row" id="info"> -->
+      <!-- Text for card title -->
+      <!-- <div class="col-8" id="dlTitle">Driver’s License Number</div> -->
+      <!-- Text for card answer -->
+      <!-- <div class="col-4" id="dlAnswer">O9923288</div>
         </div> -->
 
-        <div class="row" id="info">
-            <!-- Text for card title -->
-            <div class="col-8" id="plateTitle">License Plate Number</div>
-            <!-- Text for card answer -->
-            <div class="col-4" id="plateAnswer">123CODE</div>
-        </div>
+      <div class="row" id="info">
+        <!-- Text for card title -->
+        <div class="col-8" id="plateTitle">License Plate Number</div>
+        <!-- Text for card answer -->
+        <div class="col-4" id="plateAnswer"></div>
+      </div>
 
-        <!-- <div class="row" id="info"> -->
-            <!-- Text for card title -->
-            <!-- <div class="col-8" id="yearTitle">Year</div> -->
-            <!-- Text for card answer -->
-            <!-- <div class="col-4" id="yearAnswer">2000</div>
+      <!-- <div class="row" id="info"> -->
+      <!-- Text for card title -->
+      <!-- <div class="col-8" id="yearTitle">Year</div> -->
+      <!-- Text for card answer -->
+      <!-- <div class="col-4" id="yearAnswer">2000</div>
         </div> -->
 
-        <div class="row" id="info">
-            <!-- Text for card title -->
-            <div class="col-8" id="makeTitle">Car Make</div>
-            <!-- Text for card answer -->
-            <div class="col-4" id="makeAnswer">Mazda</div>
-        </div>
+      <div class="row" id="info">
+        <!-- Text for card title -->
+        <div class="col-8" id="makeTitle">Car Make</div>
+        <!-- Text for card answer -->
+        <div class="col-4" id="makeAnswer"></div>
+      </div>
 
-        <div class="row" id="info">
-            <!-- Text for card title -->
-            <div class="col-8" id="modelTitle">Car Model</div>
-            <!-- Text for card answer -->
-            <div class="col-4" id="modelAnswer">3</div>
-        </div>
+      <div class="row" id="info">
+        <!-- Text for card title -->
+        <div class="col-8" id="modelTitle">Car Model</div>
+        <!-- Text for card answer -->
+        <div class="col-4" id="modelAnswer"></div>
+      </div>
 
-        <div class="row" id="checkInInfo">
-            <!-- Text for card title -->
-            <div class="col-8" id="dateTitle">Date</div>
-            <!-- Text for card answer -->
-            <div class="col-4" id="timeTitle">Time</div>
-        </div>
+      <div class="row" id="checkInInfo">
+        <!-- Text for card title -->
+        <div class="col-8" id="dateTitle">Date</div>
+        <!-- Text for card answer -->
+        <div class="col-4" id="timeTitle">Time</div>
+      </div>
 
-        <div class="row" id="checkInAnswers">
-            <!-- Text for card title -->
-            <div class="col-8" id="dateAnswer">MM/DD/YYYY</div>
-            <!-- Text for card answer -->
-            <div class="col-4" id="timeAnswer">00:00pm</div>
-        </div>
+      <div class="row" id="checkInAnswers">
+        <!-- Text for card title -->
+        <div class="col-8" id="dateAnswer"></div>
+        <!-- Text for card answer -->
+        <div class="col-4" id="timeAnswer"></div>
+      </div>
 
-        <!-- Text saying the check in is complete -->
-        <h1 id="complete">CHECK IN COMPLETE</h1>
-
+      <!-- Text saying the check in is complete -->
+      <h1 id="complete">CHECK IN COMPLETE</h1>
     </div>
 
     <!-- Firebase link -->
@@ -116,7 +129,5 @@
     <script src="assets/javascript/firebase-local.js"></script>
     <!-- <script src="assets/javascript/check-in.js"></script> -->
     <script src="assets/javascript/verified.js"></script>
-
-</body>
-
+  </body>
 </html>
