@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
 
-        <!--Bootstrap CSS-->
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <!-- Firebase link -->
-        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-        <!-- Javascript link -->
-        <script src="assets/javascript/main-menu.js"></script>
-        <script src="assets/javascript/maps.js"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>LA SAFE PARKING</title>
-
-    </head>
-    <body>
-        <div class="container">
-            <nav class="nav">
-                <a class="navbar-brand" href="main-menu.html">
-                    <!-- Left side of logo -->
-                    <div class="logo1">Safe</div>
-                    <!-- Right side of logo -->
-                    <div class="logo2">Stay</div>
-                </a>
-                <a class="nav-link" href="#" id="logout">Logout</a>
-            </nav>
-        </div>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0NbKLsBHzEHWz0EHrsJ2dEAqNXc90HT8&callback=initMap">
-    </script>
-    </body>
+    <!--Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <!-- Javascript link -->
+    <script src="assets/javascript/main-menu.js"></script>
+    <script src="assets/javascript/maps.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>LA SAFE PARKING</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="navbar-brand" href="main-menu.html">
+          <!-- Left side of logo -->
+          <div class="logo1">Safe</div>
+          <!-- Right side of logo -->
+          <div class="logo2">Stay</div>
+        </a>
+        <a class="nav-link" href="#" id="logout">Logout</a>
+      </nav>
+    </div>
+    <!-- moved map div to html to prevent map load on mobile -->
+    <div id="map"></div>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0NbKLsBHzEHWz0EHrsJ2dEAqNXc90HT8&callback=initMap"
+    ></script>
+  </body>
 </html>
