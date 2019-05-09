@@ -3,18 +3,18 @@
 
 --------------------------------------------------
 
-Company Description
+#### Company Description
 LA Safe parking is a program that provides safe parking lots for homeless people to park in at night in order to sleep in their cars legally. These lots are not visible to the public and are business parking lots during the day, so participants must leave by 6:30am. There are currently 7 parking lots and only 10 cars are allowed in each lot. A person must apply to the program and go through an on-boarding process. Once they have gone through the process they receive a waiver of eligibility.
 
-Problem
+#### Problem
 How can we solve the problem of checking in and tracking the cars? When LA Safe Parking residents come to the lot the security guard currently has to write down their first and last name, their car’s license plate number, the time, and the date by hand. The guard then takes a picture of this information and sends it to the program manager, who adds this information to her personal excel sheet. The guard also keeps a copy for the parking lot owner just in case a participant has not left by 6:30am.
 
-Solution
+#### Solution
 SafeStay is a web application for the check-in process that will automatically add the data of a LA Safe Parking user to the database. This will allow the security guard to input and keep track of the driver's information.
 
 --------------------------------------------------
 
-User Flow — Check In
+#### User Flow — Check In
 1. Guard opens a website on the mobile phone
 2. Guard takes a picture of a license plate of a vehicle
 3. Guard fills out the rest of the form
@@ -23,7 +23,7 @@ User Flow — Check In
 6. The website adds a record to the database that the given vehicle has checked in at the given parking location at the given date and time
 7. Car can have access to the parking lot
 
-User Flow — Check Out
+#### User Flow — Check Out
 1. When Vehicle is ready to leave the parking lot, the guard opens a website
 2. Guard selects ‘Check out’ option
 3. They ask the driver for their license
@@ -34,23 +34,23 @@ User Flow — Check Out
 
 --------------------------------------------------
 
-Requirements
+#### Requirements
 This project must be scalable due to the growth of the program. There must be a way to manually input the information in-case there are technical difficulties with taking an image. This project must take into consideration that not all the security guards have the same mobile devices, so it must be adaptable.
 
-Resources
+#### Resources
 - HTML File
 - CSS File/ CSS Reset File/ Bootstrap Link JavaScript Code
 - Database (Firebase)
 - Google Maps API — generate the parking lot locations
 - Vin Audit API - vin verification
 
-Authors and acknowledgment
+#### Authors and acknowledgment
 - Alexis Bieda
 - Juan Pimentel
 - Rachel Rodriguez
 - Vartan Krekorian
 
-Project status
+#### Project status
 This project is currently a low fidelity project. We have researched, tested, and created the main functionality and most important features in this version.
 
 
