@@ -605,6 +605,7 @@ hr {
     height: 70%;
     margin-left: 30px;
     width: 85%;
+    max-width: inherit;
 }
 
 #right-panel {
@@ -627,16 +628,20 @@ html, body {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    /* box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4); */
     font-family: 'Roboto', 'sans-serif';
     font-size: 14px;
     line-height: 30px;
     text-align: center;
     color: #2E6698;
     /* position: relative; */
-    margin-top: 10px;
+
+    margin-top: 50px;
+
+  
     margin-left: 9px;
     /* width: 85%; */
+    max-width: inherit;
 }
 
 select {

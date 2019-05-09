@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var panelDiv = $("<div>");
+    var panelDiv = $("<div class='container'>");
     panelDiv.attr("id", "floating-panel");
     var st = $("<strong>Start:</strong>");
     var s = $("<select id='start'>");
