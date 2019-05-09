@@ -35,14 +35,10 @@ $(document).ready(function () {
     console.log(userLogin);
     console.log(userPassword);
 
-    // alert("youre logged in");
-
     // error code to be returned if login not successful
     firebase.auth().signInWithEmailAndPassword(userLogin, userPassword).catch(function (error) {
       var errorCode = error.code;
       var errorMessage = error.message;
-
-      alert("Error:" + errorMessage);
     });
 
   })
