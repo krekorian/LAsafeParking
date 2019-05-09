@@ -1,3 +1,6 @@
+var lotNumber = localStorage.getItem('lotNumber');
+var licensePlateNumber = localStorage.getItem('checkoutLicensePlate');
+
 $(document).ready(function () {
 
     return firebase.database().ref('/' + lotNumber + '/' + licensePlateNumber).once('value').then(function (snapshot) {
