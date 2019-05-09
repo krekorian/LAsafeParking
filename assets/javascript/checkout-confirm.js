@@ -11,12 +11,8 @@ $(document).ready(function () {
 
     });
 
+});
 
-
-
-
-
-
-
-
+$("#ex").on("click", function () {
+    storage.removeItem('checkoutLicensePlate');
 });

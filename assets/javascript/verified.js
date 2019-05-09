@@ -26,15 +26,10 @@ $(document).ready(function () {
         $("#timeAnswer").text(snapshot.val().Time);
         $("#driverId").text(snapshot.val().SafeStayID);
 
-
     });
 
+});
 
-
-
-
-
-
-
-
+$("#ex").on("click", function () {
+    storage.removeItem('licensePlateNumber');
 });
