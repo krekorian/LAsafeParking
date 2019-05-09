@@ -59,13 +59,13 @@ This project is currently a low fidelity project. We have researched, tested, an
 
 You will need the following information to make the application run properly. Below you will find login information, user info to populate the check in form, as well as instructions on image upload.
 
-####Login Information:
+#### Login Information:
 
 Location ID: 123
 Password: 123456
 
 
-####Driver Information:
+#### Driver Information:
 
 Driver 1:
 
@@ -80,7 +80,7 @@ First Name: Fionna
 Last Name: Johnson
 License Plate Number: 8XYD701
 
-####Image Upload Information:
+#### Image Upload Information:
 
 If logging in as Fionna Johnson...save image as 8XYD701.jpg
 
