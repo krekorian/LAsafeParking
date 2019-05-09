@@ -34,3 +34,11 @@ $(document).ready(function () {
         firebase.database().ref().update(updates);
         window.location.href = "./check-out-confirm.html";
     });
+
+    // On click event listener for logout button to take you back to login page.
+    $("#logout").on("click", function logout() {
+        firebase.auth().signOut();
+        window.location.href = "./login.html"
+    });
+
+});

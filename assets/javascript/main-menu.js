@@ -47,7 +47,7 @@ $(document).ready(function () {
                 </div>
                 <!-- Row for DL and time text -->
                 <div class="row" style="position: relative;">
-                    <div class="col-8" id="tableDL">DL: ${DL}</div>
+                    <div class="col-8" id="tableDL">${DL}</div>
 
                     <button type="button" class="btn btn-primary" id="checkOutButton" name= ${DL}
                         style="position: absolute" ;>Check Out</button>
