@@ -52,3 +52,37 @@ Authors and acknowledgment
 
 Project status
 This project is currently a low fidelity project. We have researched, tested, and created the main functionality and most important features in this version.
+
+
+
+## Resources For Grading Purposes:
+
+You will need the following information to make the application run properly. Below you will find login information, user info to populate the check in form, as well as instructions on image upload.
+
+####Login Information:
+
+Location ID: 123
+Password: 123456
+
+
+####Driver Information:
+
+Driver 1:
+
+First Name: Rachel
+Last Name: Tybi
+License Plate Number: 7EFZ117
+
+
+Driver 2:
+
+First Name: Fionna
+Last Name: Johnson
+License Plate Number: 8XYD701
+
+####Image Upload Information:
+
+If logging in as Fionna Johnson...save image as 8XYD701.jpg
+
+If logging in as Rachel Tybi...save image as 7EFZ117.jpg
+
