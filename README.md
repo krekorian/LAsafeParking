@@ -3,6 +3,9 @@
 
 --------------------------------------------------
 
+https://krekorian.github.io/LAsafeParking/login.html
+
+
 #### Company Description
 LA Safe parking is a program that provides safe parking lots for homeless people to park in at night in order to sleep in their cars legally. These lots are not visible to the public and are business parking lots during the day, so participants must leave by 6:30am. There are currently 7 parking lots and only 10 cars are allowed in each lot. A person must apply to the program and go through an on-boarding process. Once they have gone through the process they receive a waiver of eligibility.
 
